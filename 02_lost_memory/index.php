@@ -5,7 +5,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css" >		
  	  <link rel="stylesheet" href="animate.css">
-		<meta http-equiv="Refresh" content="3; url=../03_vassilys_orchestra/index.html">
+		<meta http-equiv="Refresh" content="300; url=../03_vassilys_orchestra/index.html">
 		<title>Memory Loss</title>
 	</head>
   <body bgcolor=black >
