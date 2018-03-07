@@ -1,0 +1,223 @@
+<html>
+
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Anton|Playfair+Display|Arimo' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="trucDiogo.css">
+	<link rel="icon" type="image/png" href="favicon.ico" />
+	<meta http-equiv="Refresh" content="300; url=../05_morse/index.html">
+	<title>DIOGO.BASS.MACHINE</title>
+
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		/*
+			VARIABLES :
+				tempo : définit la vitesse à laquelle joue la séquence. Elle est modifiée via la fonction ChangeTempo()
+				A : fichier audio correspondant à un Do grave
+				kick : fichier audio correspondant à une caisse claire synthétique
+				clap : fichier audio correpondant à un "clap" [NON UTILISÉ, voir: JouerX()]
+				lettresBinaires : Array assignant à chaque lettre une séquence de 8 bits où chaque bits (X ou O) lance une fonction.
+		*/
+		var tempo = 300;
+
+		A = new Audio("A.mp3");
+		var kick = new Audio("kick.mp3");
+		var clap = new Audio("clap.mp3");
+
+		var lettresBinaires = new Array();
+		lettresBinaires["a"] = "OXXOOOOX";
+		lettresBinaires["b"] = "OXXOOOXO";
+		lettresBinaires["c"] = "OXXOOOXX";
+		lettresBinaires["d"] = "OXXOOXOO";
+		lettresBinaires["e"] = "OXXOOXOX";
+		lettresBinaires["f"] = "OXXOOXXO";
+		lettresBinaires["g"] = "OXXOOXXX";
+		lettresBinaires["h"] = "OXXOXOOO";
+		lettresBinaires["i"] = "OXXOXOOX";
+		lettresBinaires["j"] = "OXXOXOXO";
+		lettresBinaires["k"] = "OXXOXOXX";
+		lettresBinaires["l"] = "OXXOXXOO";
+		lettresBinaires["m"] = "OXXOXXOX";
+		lettresBinaires["n"] = "OXXOXXXO";
+		lettresBinaires["o"] = "OXXOXXXX";
+		lettresBinaires["p"] = "OXXXOOOO";
+		lettresBinaires["q"] = "OXXXOOOX";
+		lettresBinaires["r"] = "OXXXOOXO";
+		lettresBinaires["s"] = "OXXXOOXX";
+		lettresBinaires["t"] = "OXXXOXOO";
+		lettresBinaires["u"] = "OXXXOXOX";
+		lettresBinaires["v"] = "OXXXOXXO";
+		lettresBinaires["w"] = "OXXXOXXX";
+		lettresBinaires["x"] = "OXXXXOOO";
+		lettresBinaires["y"] = "OXXXXOOX";
+		lettresBinaires["z"] = "OXXXXOXO";
+		lettresBinaires["A"] = "OXOOOOOX";
+		lettresBinaires["B"] = "OXOOOOXO";
+		lettresBinaires["C"] = "OXOOOOXX";
+		lettresBinaires["D"] = "OXOOOXOO";
+		lettresBinaires["E"] = "OXOOOXOX";
+		lettresBinaires["F"] = "OXOOOXXO";
+		lettresBinaires["G"] = "OXOOOXXX";
+		lettresBinaires["H"] = "OXOOXOOO";
+		lettresBinaires["I"] = "OXOOXOOX";
+		lettresBinaires["J"] = "OXOOXOXO";
+		lettresBinaires["K"] = "OXOOXOXX";
+		lettresBinaires["L"] = "OXOOXXOO";
+		lettresBinaires["M"] = "OXOOXXOX";
+		lettresBinaires["N"] = "OXOOXXXO";
+		lettresBinaires["O"] = "OXOOXXXX";
+		lettresBinaires["P"] = "OXOXOOOO";
+		lettresBinaires["Q"] = "OXOXOOOX";
+		lettresBinaires["R"] = "OXOXOOXO";
+		lettresBinaires["S"] = "OXOXOOXX";
+		lettresBinaires["T"] = "OXOXOXOO";
+		lettresBinaires["U"] = "OXOXOXOX";
+		lettresBinaires["V"] = "OXOXOXXO";
+		lettresBinaires["W"] = "OXOXOXXX";
+		lettresBinaires["X"] = "OXOXXOOO";
+		lettresBinaires["Y"] = "OXOXXOOX";
+		lettresBinaires["é"] = "XXXOXOOX";
+		lettresBinaires["è"] = "XXXOXOOO";
+		lettresBinaires["ç"] = "XXXOOXXX";
+		lettresBinaires["ë"] = "XXXOXOXX";
+		lettresBinaires["ï"] = "XXXOXXXX";
+		lettresBinaires[" "] = "OOOOOOOO";
+		lettresBinaires["1"] = "OOOOOOOO";
+		lettresBinaires["2"] = "OOOOOOOO";
+		lettresBinaires["3"] = "OOOOOOOO";
+		lettresBinaires["4"] = "OOOOOOOO";
+		lettresBinaires["5"] = "OOOOOOOO";
+		lettresBinaires["6"] = "OOOOOOOO";
+		lettresBinaires["7"] = "OOOOOOOO";
+		lettresBinaires["8"] = "OOOOOOOO";
+		lettresBinaires["9"] = "OOOOOOOO";
+		lettresBinaires["0"] = "OOOOOOOO";
+
+		/*
+			A l'appel de la fonction la fonction récupère la valeur du champs texte "_prenom".
+			La fonction décompose la chaine de caractères, et assigne pour chacune des lettres une valeur "binaire",
+			selon l'array lettresBinaires, et stocke le résultat final dans une nouvelle variable prenomBinaire.
+			
+			prenomBinaire est ensuite parcouru par une boucle, ou chaque X ou O enclenche la fonction associée
+			selon un procédé ingénieux; puisque la boucle s'effectue de manière quasi instantanée il faut éviter 
+			que tout les sons ne se jouent d'un coup. Pour cela on assigne à chaque X/O du prenomBinaire
+			un appel de fonction dans le futur selon la formule très simple :
+			[ position de X/O dans la séquence x tempo = temps dans lequel elle sera joué]
+			
+			ex: dans la séquence "oxooXo", à tempo = 300
+			le X en majuscule étant en position 4 serajoué après 4x300ms (soit 1200ms)
+			
+			
+			La fonction joue également le kick, un coup sur deux, en utilisant un principe similaire.
+			Pour assigner le kick tout les 2 temps on utilise un modulo (division euclidienne).
+			Si la boucle est sur un chiffre pair (i % 2 = 0, soit le reste de la division euclidienne nul)
+			le kick est joué.
+			ex : "oxooXo"
+			le X en majuscule est en position 4 
+			4 % 2 = 0 => le kick est joué.
+		*/
+		function SuperBasse() {
+			var prenom = document.getElementById("_prenom").value;
+			var presplit = prenom.split('');
+			var prenomBinaire = "";
+
+			for (i = 0; i < presplit.length; i++) {
+				lettreI = presplit[i];
+				prenomBinaire += lettresBinaires[lettreI];
+			}
+
+			document.getElementById("_afficheurBinaire").style.backgroundColor = "black";
+			document.getElementById("_afficheurBinaire").innerHTML = "";
+
+			for (i = 0; i < prenomBinaire.length; i++) {
+				timeOut = tempo * i;
+
+				if (prenomBinaire[i] == "X")
+					window.setTimeout(JouerX, timeOut);
+
+				else if (prenomBinaire[i] == "O")
+					window.setTimeout(JouerO, timeOut);
+
+				if (i % 2 == 0)
+					window.setTimeout(JouerKick, timeOut);
+			}
+		}
+
+
+		/*
+			Les fonction JouerX/O permettent simplement de jouer un son en fonction du X ou O.
+			dans le cas du X, ce sera la note basse définie au début du code (la variable A) qui sera joué
+			dans le cas du O, rien ne sera joué (en réalité, avant cela jouait un clap, mais le code à été commenté tant le bruit était énervant!)
+			
+			la fonction Dimension Afficheur, redimmensionne le rectangle noir où s'affiche la séquence binaire, 
+			afin que les très longues séquences ne déforme pas complètement la fenêtre utilisateur.
+			Pour se faire elle réduit la taille de la police de la séquence d'un pixel tout les 8 caractères.
+			(ne descend jamais plus bas que 3px pour des questions de lisibilité)
+		*/
+		function JouerX() {
+			A.play();
+			document.getElementById("_afficheurBinaire").innerHTML += "X";
+
+			DimensionAfficheur(document.getElementById("_afficheurBinaire").innerHTML.length);
+		}
+
+		function JouerO() {
+			document.getElementById("_afficheurBinaire").innerHTML += "O";
+			DimensionAfficheur(document.getElementById("_afficheurBinaire").innerHTML.length);
+			/*clap.play();*/
+		}
+
+		function JouerKick() {
+			kick.play();
+		}
+
+		function DimensionAfficheur(tailleBinaire) {
+			tailleLettre = 34 - Math.ceil(tailleBinaire / 8);
+			taillePadding = 39 - tailleLettre;
+
+			if (tailleLettre > 3) {
+				document.getElementById("_afficheurBinaire").style.fontSize = tailleLettre + "px";
+				document.getElementById("_afficheurBinaire").style.padding = taillePadding + "px 5px";
+			}
+		}
+
+		function ChangeTempo(vitesse) {
+			tempo = vitesse;
+		}
+	</script>
+</head>
+
+<body>
+	<div id="maincontainer">
+
+		<div id="diogobassmachine">
+			<span class="diogo">DIOGO</span>
+			<br>
+			<span class="bass">BASS</span>
+			<br>
+			<span class="machine">MACHINE</span>
+			<br>
+			<div class="underlined"></div>
+		</div>
+
+		<div id="_afficheurBinaire">&nbsp;</div>
+
+		<div id="subcontainer">
+			Bienvenue dans un autre monde!
+			<br> Si tu l'oses, rentre ton prénom ou celui de ta moitié, voire de ton ennemi juré ... et mets-le à l'épreuve de la
+			<span class="dbm">DIOGO BASS MACHINE</span>
+			<br>
+			<input type="text" id="_prenom" />
+
+			<select id="tempo" onchange="javascript:ChangeTempo(this.value)">
+				<option value="400">LENT</option>
+				<option value="290" selected="selected">NORMAL</option>
+				<option value="180">RAPIDOS!</option>
+			</select>
+
+			<div id="bouton" onclick="javascript:SuperBasse()">Je suis prêt à confronter le destin!</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

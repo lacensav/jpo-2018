@@ -1,0 +1,175 @@
+body {
+	background: #5E610B;
+}
+
+.isee {
+	color: white;
+	width: 20px;
+	height: 25px;
+	background: transparent;
+	transition: all 1s ease-out;
+	opacity: 0;
+}
+
+.isee:hover {
+	
+	opacity: 100;
+}
+
+
+.yousee {
+	color: white;
+	width: 20px;
+	height: 25px;
+	background: transparent;
+	transition: all 1s ease-out;
+	opacity: 0;
+}
+
+.yousee:hover {
+	
+	opacity: 100;
+}
+
+
+.you {
+	color: white;
+	width: 20px;
+	height: 25px;
+	background: transparent;
+	transition: all 1s ease-out;
+	opacity: 0;
+}
+
+.you:hover {
+	
+	opacity: 100;
+}
+
+
+.meseeing {
+	color: white;
+	width: 20px;
+	height: 25px;
+	background: transparent;
+	transition: all 1s ease-out;
+	opacity: 0;
+}
+
+.meseeing:hover {
+	
+	opacity: 100;
+}
+
+.iwant {
+	color: white;
+	width: 20px;
+	height: 25px;
+	background: transparent;
+	transition: all 1s ease-out;
+	opacity: 0;
+}
+
+.iwant:hover {
+	
+	opacity: 100;
+}
+
+.tosee {
+	color: white;
+	width: 20px;
+	height: 25px;
+	background: transparent;
+	transition: all 1s ease-out;
+	opacity: 0;
+}
+
+.tosee:hover {
+	
+	opacity: 100;
+}
+
+.how {
+	color: white;
+	width: 20px;
+	height: 25px;
+	background: transparent;
+	transition: all 1s ease-out;
+	opacity: 0;
+}
+
+.how:hover {
+	
+	opacity: 100;
+}
+.youwant {
+	color: white;
+	width: 20px;
+	height: 25px;
+	background: transparent;
+	transition: all 1s ease-out;
+	opacity: 0;
+}
+
+.youwant:hover {
+	
+	opacity: 100;
+}
+
+.toshow {
+	color: white;
+	width: 20px;
+	height: 25px;
+	background: transparent;
+	transition: all 1s ease-out;
+	opacity: 0;
+}
+
+.toshow:hover {
+	
+	opacity: 100;
+}
+
+.seeing {
+	color: white;
+	width: 20px;
+	height: 25px;
+	background: transparent;
+	transition: all 1s ease-out;
+	opacity: 0;
+}
+
+.seeing:hover {
+	
+	opacity: 100;
+}
+
+.wereseeing {
+	color: white;
+	width: 20px;
+	height: 25px;
+	background: transparent;
+	transition: all 1s ease-out;
+	opacity: 0;
+}
+
+.wereseeing:hover {
+	
+	opacity: 100;
+}
+
+.signature {
+	color: white;
+	width: 20px;
+	height: 25px;
+	background: transparent;
+	transition: all 1s ease-out;
+	opacity: 0;
+	font-family: Courier New
+}
+
+.signature:hover {
+	
+	opacity: 100;
+}
+

@@ -1,0 +1,95 @@
+::selection {
+	background: #F1ECB4;
+	color : #C42626;
+}
+::-moz-selection {
+	background: #F1ECB4;
+	color : #C42626;
+}
+
+body{
+	background : #C42626 url(diogobigbro.png) no-repeat center top;
+	margin : auto;
+	padding : 0;
+	color : #F1ECB4;
+	font-family: 'Playfair Display';
+}
+
+#maincontainer{
+	width : 800px;
+	margin : auto;
+}
+
+#diogobassmachine{
+	float : left;
+	line-height : 55px;
+	padding-top : 25px;
+}
+
+.diogo{
+	font-family: 'Arimo';
+	font-size : 64px;
+}
+
+.bass{
+	font-family: 'Arimo';
+	font-size : 76px;
+	letter-spacing : 2px;
+}
+
+.machine{
+	font-family: 'Arimo';
+	font-size : 50px;
+	letter-spacing : -5px;
+	padding-left : 3px;
+}
+
+.underlined{
+	width : 197px;
+	height : 5px;
+	background : #F1ECB4;
+	margin-left : 5px;
+}
+	
+#subcontainer{
+	padding-top : 400px;
+	font-size : 22px;
+	text-align : center;
+}
+
+#bouton{
+	background: #940000;
+	background-image: -webkit-linear-gradient(top, #940000, #7E0000);
+	background-image: -moz-linear-gradient(top, #940000, #7E0000);
+	background-image: -ms-linear-gradient(top, #940000, #7E0000);
+	background-image: -o-linear-gradient(top, #940000, #7E0000);
+	background-image: linear-gradient(to bottom, #940000, #7E0000);
+	-webkit-border-radius: 19;
+	-moz-border-radius: 19;
+	border-radius: 19px;
+	color: #ffffff;
+	font-size: 18px;
+	padding: 10px 20px 10px 20px;
+	border: solid #580000 1px;
+	text-decoration: none;
+	font-family : 'Anton';
+	cursor : pointer;
+	width : 300px;
+	margin : 15px auto auto auto;
+}
+
+#_afficheurBinaire{
+	font-family : 'Anton';
+	font-size : 34px;
+	padding : 5px;
+    position: absolute;
+    left: 50%;
+	top : 260px;
+    transform: translate(-50%, 0);
+}
+
+.dbm{
+	font-family: 'Arimo';
+	letter-spacing : -2px;
+	font-size : 30px;
+}
