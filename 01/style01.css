@@ -1,0 +1,51 @@
+* {-moz-box-sizing: border-box; box-sizing: border-box;}
+
+ body {
+
+	background-color: black;
+	background-image: url(BG2.jpg);
+	
+}
+
+	h1 {
+	font-family: 'Walter Turncoat', cursive;
+	text-align: center;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	word-spacing: 20px;
+	font-size: 45px;
+	color: #2a2c1f;
+}
+
+.bcp {
+
+	word-spacing: -10px;
+
+}
+
+.bof {
+	
+	text-align: center;
+
+}
+
+
+.img {
+	display: inline-block;
+	margin-top: 26%;
+
+}
+
+img {
+	width: 70px;
+	height: 47px;
+}
+
+a {
+		font-family: 'Walter Turncoat', cursive;
+		text-align: center;
+		color: black;
+		margin: 500px
+
+
+}

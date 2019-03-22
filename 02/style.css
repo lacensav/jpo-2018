@@ -1,0 +1,357 @@
+.font{
+	font-family: 'Amatic SC', cursive;
+	margin:					auto;
+	color:					white;
+	text-align:				center;
+}
+
+.rectangle {
+	width: 100px;
+	height: 100px;
+	background: transparent;
+  	position: relative;
+  	overflow: hidden;
+  	float:left;
+	left 
+}
+
+.rectangle:not(:hover) {
+	background-color: black;
+	transition: all 2500ms cubic-bezier(0.055, 0.035, 1.000, 0.155);
+}
+
+.container1 {
+	background: url(images/Background1.jpg) no-repeat center top;
+	max-width:				900px;
+	min-width:				900px;
+	  
+	overflow: 				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-size:		100%;
+}
+
+.container2 {
+	background-image: url(images/Background2.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow: 				hidden;
+	margin:					auto;
+	position: 				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container3 {
+	background-image: url(images/Background3.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container4 {
+	background-image: url(images/Background4.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container5 {
+	background-image: url(images/Background5.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+.container6 {
+	background-image: url(images/Background6.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container7 {
+	background-image: url(images/Background7.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container8 {
+	background-image: url(images/Background8.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container9 {
+	background-image: url(images/Background9.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container10 {
+	background-image: url(images/Background3.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container11 {
+	background-image: url(images/Background11.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container12 {
+	background-image: url(images/Background12.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container13 {
+	background-image: url(images/Background13.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container14 {
+	background-image: url(images/Background14.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container15 {
+	background-image: url(images/Background15.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container16 {
+	background-image: url(images/Background16.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container17 {
+	background-image: url(images/Background17.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container18 {
+	background-image: url(images/Background18.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container19 {
+	background-image: url(images/Background19.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container20 {
+	background-image: url(images/Background20.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container21 {
+	background-image: url(images/Background21.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container22 {
+	background-image: url(images/Background22.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container23 {
+	background-image: url(images/Background23.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+.container24 {
+	background-image: url(images/Background24.jpg);
+	max-width: 				900px;
+	min-width: 				900px;
+	  
+	overflow:				hidden;
+	margin:					auto;
+	position:				relative;
+	
+	background-position:	center top;
+	background-repeat:		no-repeat;
+	background-size: 		100%;
+}
+
+
+

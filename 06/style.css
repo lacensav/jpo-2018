@@ -1,0 +1,80 @@
+
+.rectangle { 
+	width: 80% ;
+	color: #D52B06;
+	text-align: center;
+	padding: 20px;
+	
+	margin: 0px 0;
+	position: fixed ;
+	top:0;
+	left:10%;
+	box-sizing: border-box;
+	}
+.contenu {
+	 max-width: 100%;
+	 margin: auto ;
+	}
+
+.inventaire {
+	top: 150px;
+	left: 10%;
+	position: absolute;
+	width: 200px;
+	text-align: center;
+	font-family: 'Oswald:', sans-serif,;
+	position: fixed;
+	
+
+	}	
+
+.inventaire a {
+	color: #D52B06;
+}
+#agence {
+	margin-top: 100px
+	}
+#info {
+	bottom: 0%;
+	
+	right:10%;
+	left: 10%;
+	position: relative;
+	width: 80%;
+	height: 20%;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	color: #D52B06;
+	box-sizing: border-box;
+}
+
+#ambre {
+	margin-top: 200px;
+	margin-bottom: 50px;
+	text-align: center;
+	}
+
+#map {
+	margin-bottom: 10%;
+	left: 10%;
+	right: 10%;
+	}
+#presentation {
+	margin-top: 100px;
+	color: #D52B06;
+	font-family: 'Oswald', sans-serif;
+
+	
+}
+
+
+
+
+h2 {text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black}
+
+h4 {text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black}
+
+
+

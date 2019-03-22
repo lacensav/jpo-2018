@@ -1,0 +1,121 @@
+
+
+
+#navigation {
+  width: 200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation li {
+  background: #c00 ;
+  color: ;
+  border: 1px solid #600 ;
+  margin-bottom: 1px ;
+}
+
+#navigation li a {
+  display: block ;
+  background: #c00 ;
+  color: blue ;
+  font: 1em "Trebuchet MS",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+  padding: 4px 0 ;
+}
+
+#navigation li a:hover, #navigation li a:focus, #navigation li a:active {
+  background: #900 ;
+  text-decoration: underline ;
+}
+
+
+.my-img{
+  width: 30%;
+  float: center;
+  display: inline-block;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.my-img:hover {
+    content: url(Alcool-1.jpg);
+
+}
+
+
+.Harem{
+  width: 30%;
+  float: center;
+  display: inline-block;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.Harem:hover {
+    content: url(Harem-1.jpg);
+
+  }
+
+
+.Trop-de-thune{
+  width: 30%;
+  float: center;
+  display: inline-block;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.Trop-de-thune:hover {
+    content: url(Trop-de-thune-1.jpg); 
+    } 
+
+.Oklm{
+  width: 30%;
+  float: center;
+  display: inline-block;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.Oklm:hover {
+    content: url(Oklm-1.jpg); 
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

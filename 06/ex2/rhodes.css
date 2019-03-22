@@ -1,0 +1,48 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+header { 
+    top: 0px;
+   
+    left:10%;
+    position: fixed;
+    width: 80%;
+    text-align: center;
+    font-family: 'monospace', sans-serif;
+    color: #D52B06;
+
+
+}
+#photo {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#map {
+    text-align: center;
+    }
+#hello {
+    text-align: center;
+    }
+
+body {
+    background-attachment: fixed;
+
+}
+
+h2 {text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black}
+
+h4 {text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black}
+
+h3 {text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black}
+
+.imageCentre {text-align:center}
+

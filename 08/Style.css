@@ -1,0 +1,47 @@
+
+
+body {
+   background-image: src= ("*image/Backround.jpg");
+   background-color: #cccccc;
+}
+
+
+
+h1 {
+  display: inline-block;
+  position: relative;
+  font: 100px Helvetica, Sans-Serif;
+  letter-spacing: -3px;
+  color: #151515; 
+  text-align: center;
+}
+
+h1:after {
+  content: "OUR HOT RHYTHMS WILL KEEP YOU DANCING ALL NIGHT LONG";
+  position: absolute; left: 10px; top: 5px;
+  color: #DF013A;   
+}
+
+#navigation{
+  width: 50%;
+  font-size:20pt;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: "Courier New";
+  display: inline-block;
+}
+
+img{display: inline-block;}
+
+li{
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color: red;
+  font-weight: 600;
+}
+
+a:hover{
+  text-decoration: underline;
+}
