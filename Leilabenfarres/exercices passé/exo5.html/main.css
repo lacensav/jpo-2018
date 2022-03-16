@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "boldfont" ;
+    src: url("font/JetBrainsMono-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Exboldfont";
+    src: url("font/JetBrainsMono-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "lightfont";
+    src: url("font/JetBrainsMono-Light.ttf");
+}
+
+@font-face {
+    font-family: "medfont";
+    src: url("font/JetBrainsMono-Medium.ttf");
+}
+
+@font-face {
+    font-family: "regfont";
+    src: url("font/JetBrainsMono-Regular.ttf");
+}
+
+body {
+    background-color: black;
+}
+
+h1 { 
+    font-family: "Exboldfont";
+    text-align: center;
+    font-size: 900%;
+    text-align: center;
+    color: white;
+    margin-top: 15%;
+    margin-bottom: 20%;
+}
+
+h1:hover {
+    filter: blur(4px);
+}
+
+h2{
+    font-family: sans-serif;
+    font-weight: 120;
+    color: rgb(173, 173, 173);
+    margin-left: 3%;
+    font-size: 120%;
+}
+
+.name {
+    font-family: "boldfont";
+    font-size: 300%;
+    margin-left: 3%;
+    color: white;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.l {
+    font-family: "boldfont";
+    font-size: 500%;
+    width: calc(1% - 1rem);
+    min-width: 140px;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.l:hover {
+    transform: scale(2);
+}
+.l2 {
+    font-family: "regfont";
+    font-size: 500%;
+    width: calc(1% - 1rem);
+    min-width: 140px;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: white;
+}
+.l2:hover {
+    transform: scale(2);
+}
+
+
+.l3 {
+    font-family: "lightfont";
+    font-size: 500%;
+    width: calc(1% - 1rem);
+    min-width: 140px;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: white;
+}
+.l3:hover {
+    transform: scale(2);
+   
+}
+
+
+.site {
+    text-decoration:none; 
+    font-family: "boldfont";
+    font-size: 300%;
+    margin-left: 3%;
+    color: white;
+}
+
+.site:hover span {
+    text-decoration: underline wavy #483946;
+}
+
+.about {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 130%;
+    margin-left: 3%;
+    color: white;
+    line-height: 160%;
+    margin-bottom: 8%;
+}
+
+.defil { 
+    color: white;
+}

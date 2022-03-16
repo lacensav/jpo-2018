@@ -1,0 +1,113 @@
+#parent{
+    position: relative;
+}
+
+body {
+    background: rgb(134, 28, 28);
+}
+  
+.div {
+    position: absolute;
+
+}
+.cercle {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position:absolute;
+    top: 93px;
+    left: 665px;
+    margin: auto;
+}
+  .eye-shape {
+    width: 300px;
+    height: 300px;
+    background-color:beige;
+    border-radius: 100% 0px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+  }
+
+  .cercle2 {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position:absolute;
+    top: 99px;
+    left: 754px;
+    margin: auto;
+}
+  .eye-shape2 {
+    width: 300px;
+    height: 300px;
+    background-color:beige;
+    border-radius: 100% 0px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+  }
+
+  .cercle3 {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position:absolute;
+    top: 99px;
+    left: 560px;
+    margin: auto;
+}
+  .eye-shape3 {
+    width: 300px;
+    height: 300px;
+    background-color:beige;
+    border-radius: 100% 0px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+  }
+
+  .cercle4 {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position:absolute;
+    top: 133px;
+    left: 665px;
+    margin: auto;
+}
+  .eye-shape4 {
+    width: 300px;
+    height: 300px;
+    background-color:beige;
+    border-radius: 100% 0px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+  }
+
+  .cercle5 {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position:absolute;
+    top: 64px;
+    left: 665px;
+    margin: auto;
+}
+  .eye-shape5 {
+    width: 300px;
+    height: 300px;
+    background-color:beige;
+    border-radius: 100% 0px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+  }
+
+
+
+
+
+
+
