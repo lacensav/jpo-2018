@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap');
+
+
+main{
+    padding: 0 30px;
+}
+
+.topnav {
+    position: fixed;
+    top: 25%;
+    left: 0;
+    width: 200px;
+    z-index: 1;
+    height: 100vh;
+    }
+
+.navlink {
+    display: block;
+    padding: 50px 20px;
+    text-decoration: none;
+    color: rgb(207, 207, 207);;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    background-color: black;
+}
+
+.audiobar {
+    position: fixed;
+    left: 40vw;
+}
+
+.white {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.centeredtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.centered {
+    position: fixed;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: auto;
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bomb {
+    max-width: 100%;
+}
+
+.current {
+    color: rgb(181, 181, 181);
+    -webkit-text-stroke: 1px rgba(255, 0, 0, 0.523);
+}
+
+.navlink:hover {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgba(255, 0, 0, 0.523);
+}
+
+.explication {
+    font-size: 16px;
+}

@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'leila';
+    src: url("font/CooperHewitt-Heavy.otf") ;
+}   
+
+h1 {
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: red;
+    font-family: 'leila';
+
+}
+
+.site {
+    color: black;
+    text-decoration:none; 
+    font-size: 20px;
+} 
+
+#wiki {
+    height: 30px;
+    position: sticky;
+    top: 0px;
+    font-family: sans-serif;
+    margin-left: 1cm;
+}
+#wiki:hover {
+    text-decoration: underline black;
+  }
+
+
+#JM {
+position: sticky;
+top: 560px;
+height: 30px;
+margin-left: 1cm;
+}
+
+
+body {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.foot {
+    height: auto;
+}
+
+footer {
+    display: table-row;
+    height: 230px;
+}
+
+.I1 {
+    margin-top: -90px;
+    margin-left: 300px;
+   
+}
+
+
+.I3 {
+    float: left;
+    margin-left: 80px;
+    margin-top: 270px;
+}
+
+.I2 {
+    float: right;
+    margin-right: 200px;
+    margin-top: -4%;
+}
+
+.I4 {
+    margin-left: 100px;
+    margin-top: 350px;
+
+}
+
+.I5 {
+    margin-left: 20px;
+    margin-top: 100px;
+
+}
+
+.I6 {
+    float: right;
+    margin-right: 4cm;
+    margin-top: 30px;
+
+}
+
+.I7 {
+    float: right;
+margin-right: 19cm;
+margin-top: 50px;
+
+}
+
+.I8 {
+margin-left: 5cm;
+margin-top: 65px;
+
+}
+
+.I9 {
+margin-left: 20cm;
+margin-bottom: 8cm;
+
+}
+
+.texte {
+    margin-left: 1cm;
+    font-family: sans-serif;
+    margin-top: -250px;
+    font-size: 12px;
+}
+

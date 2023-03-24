@@ -1,0 +1,39 @@
+
+body {
+
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+h1 { 
+    color: white;
+    margin-top: 3%;
+}
+
+.covidart {
+
+    font-size: small;
+    color : white;
+}
+
+.et{
+    color:papayawhip;
+}
+.extraset {
+
+    font-size: small;
+    color:papayawhip;
+}
+
+.at {
+ color:slateblue;
+}
+
+.arkadia {
+
+    font-size: smaller;
+    color:slateblue;
+}
+

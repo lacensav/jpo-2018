@@ -1,0 +1,97 @@
+#plane {
+  position: absolute;
+  inset: 0;
+}
+
+@font-face {
+  font-family: "font Freight";
+  src: url(font/Freight\ Text\ Medium.otf);
+}
+
+.phrase {
+  font-family: "font Freight";
+  font-size: 17px;
+  color: black;
+  margin-top: 4%;
+  margin-left: 6%;
+}
+
+.phrase1 {
+  font-family: "font Freight";
+  font-size: 17px;
+  color: black;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+.phrase2 {
+  font-family: "font Freight";
+  font-size: 17px;
+  color: black;
+  margin-top: -8%;
+  margin-left: 65%;
+}
+
+.phrase3 {
+  font-family: "font Freight";
+  font-size: 17px;
+  color: black;
+  margin-top: 8%;
+  margin-left: 80%;
+}
+
+.phrase4 {
+  font-family: "font Freight";
+  font-size: 17px;
+  color: black;
+  margin-top: 9%;
+  margin-left: 40%;
+}
+
+
+.phrase5 {
+  font-family: "font Freight";
+  font-size: 17px;
+  color: black;
+  margin-top: 9%;
+  margin-left: 20%;
+}
+
+.phrase6 {
+  font-size: 17px;
+  color: black;
+  margin-top: -3%;
+  margin-left: 80%;
+}
+
+.phrase7 {
+  font-family: "font Freight";
+  font-size: 17px;
+  color: black;
+  margin-top: 16%;
+  margin-left: 20%;
+}
+
+.phrase8 {
+  font-family: "font Freight";
+  font-size: 17px;
+  color: black;
+  margin-top: -4%;
+  margin-left: 70%;
+}
+
+.phrase9 {
+  font-family: "font Freight";
+  font-size: 17px;
+  color: black;
+  margin-top: -9%;
+  margin-left: 10%;
+}
+
+.phrase10 {
+  font-family: "font Freight";
+  font-size: 17px;
+  color: black;
+  margin-top: -20%;
+  margin-left: 70%;
+}
