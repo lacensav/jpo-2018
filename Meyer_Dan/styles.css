@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat+Alternates&family=Special+Elite&display=swap');
+
+
+body {
+    /* padding: 30px 30px 0 30px; */
+    background-color: rgb(255, 255, 255);
+    /* margin-left: 200px; */
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h2 {
+    /* padding: 30px 30px 0 30px; */
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    /* margin-left: 200px; */
+}
+
+h3 {
+    /* padding: 30px 30px 0 30px; */
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    top: 0%;
+    left: 0%;
+    position: relative;
+    text-align: center;
+
+    /* margin-left: 200px; */
+}
+
+h4 {
+    /* padding: 30px 30px 0 30px; */
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    top: 0%;
+    left: 0%;
+    position: relative;
+
+    /* margin-left: 200px; */
+
+}
+
+h5 {
+    /* padding: 30px 30px 0 30px; */
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    top: 0%;
+    left: 0%;
+    position: relative;
+
+    /* margin-left: 200px; */
+    /* margin-right: 1000px; */
+}
+
+h6 {
+    /* padding: 30px 30px 0 30px; */
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+    top: 0%;
+    left: 0%;
+    position: relative;
+
+    /* margin-left: 200px; */
+}
+
+.link2 {
+    /* padding: 30px 30px 0 30px; */
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    color: rgb(255, 0, 0);
+    top: 0%;
+    left: 0%;
+    position: relative;
+
+    /* margin-left: 200px; */
+}
+
+.link3 {
+    /* padding: 30px 30px 0 30px; */
+    font-family: 'Special Elite', cursive;
+    font-size: 17px;
+    color: rgb(255, 0, 0);
+    top: 0%;
+    left: 0%;
+    position: relative;
+
+    /* margin-left: 200px; */
+    /* margin-right: 1000px; */
+}
+
+.link4 {
+    /* padding: 30px 30px 0 30px; */
+    font-family: 'Special Elite', cursive;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    top: 0%;
+    left: 0%;
+    position: relative;
+
+    /* margin-left: 200px; */
+    /* margin-right: 1000px; */
+}
+
+
+.link {
+    /* padding: 30px 30px 0 30px; */
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    /* margin-left: 200px; */
+}
+
+
+
+.navlink {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.current {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.navlink:hover {
+    background-color: rgb(146, 146, 146);
+    color: #fff;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    /* position: fixed;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    left: 0; */
+}
+
+.square1 {
+    width: 570px;
+    height: 560px;
+    background-color: rgb(255, 255, 255);
+    position: left;
+    overflow: hidden;
+}
+
+.center {
+    width: 550px;
+    height: 550px;
+    background: url(images/Atomiumedit1.png);
+    position: left;
+    background-size: 100%;
+
+}
+
+.rectangle1 {
+    width: 350px;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    position: relative;
+    top: 30%;
+    left: center;
+}
+
+.rectangle2 {
+    width: 350px;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    position: relative;
+    top: 35%;
+    left: center;
+}
+
+.rectangletxt {
+    width: 250px;
+    height: 30px;
+    background: rgb(0, 0, 0);
+    position: relative;
+    top: 20%;
+    left: 20%;
+}
+
+.rectangletxt2 {
+    width: 250px;
+    height: 30px;
+    background: rgb(0, 0, 0);
+    position: relative;
+    top: 20%;
+    left: 25%;
+}
+
+.img {
+    max-width: 100%;
+    position: center;
+
+
+}
+
+.imggrand {
+    size: 150%;
+    block-size: 150%;
+    display: block;
+    position: center;
+}
+
+.contenant {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: bold;
+    left: center;
+    top: 20%;
+    font-family: 'Special Elite', cursive;
+
+
+}
+
+.container2 {
+    color: rgb(71, 0, 0);
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    text-align: left;
+    left: 0%;
+    top: 100%;
+}
+
+.contenant2 {
+    position: relative;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bold;
+    left: 0%;
+    top: 30%;
+
+
+}
+
+.texte_centrer {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.texte_centrer2 {
+    position: absolute;
+    top: 1%;
+    left: -1%;
+    text-align: left;
+
+    background-color: rgba(255, 255, 255, 0.634);
+}
+
+.row2 {
+    position: relative;
+    top: 10%
+}
+
+@media (min-width: 768px) {
+    .navlink {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding: 30px 30px 0 30px;
+        background-color: rgb(255, 255, 255);
+        margin-left: 200px;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+
+    nav {
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        height: 100px;
+        width: 200px;
+        top: 0;
+        left: 0;
+
+    }
+
+    .navlink {
+        display: block;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .step-1 {
+        margin-top: 150px;
+    }
+
+    .step-2 {
+        margin-top: 100px;
+    }
+
+    .step-3 {
+        margin-top: 50px;
+    }
+}
+
+@media all and (max-width:480px) {
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
