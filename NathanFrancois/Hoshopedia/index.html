@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <link rel="icon" href="ptitlogo.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <title>Aircraft Carrier Hōshō</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            top: 0;
+            box-sizing: border-box;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        @font-face {
+            font-family: 'Roobert';
+            src: url('RoobertRegular.woff') format('woff')
+        }   
+        ::selection {
+            background: rgba(0, 0, 0); /* WebKit/Blink Browsers */
+            color: white;
+        }
+        ::-moz-selection {
+            background: rgba(0, 0, 0); /* Gecko Browsers */
+            color: white;
+        }
+        h1 {
+            font-size: 1rem;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin: 2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            font-weight: 1;
+        }
+        h2 {
+            font-size: 0.7rem;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            font-weight: 1;
+        }
+        .grid-container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4 , 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            padding: auto;
+            text-align: center;
+        }
+        .grid-container div {
+            z-index: 99;
+        }
+        .it {
+            display: flex;
+            vertical-align: auto;
+        }
+        #item1 { 
+            grid-area: 1922;
+            grid-column: 1;
+            grid-row: 1;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #item2 { 
+            grid-area: 1924;
+            grid-column: 1;
+            grid-row: 2;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #item3 { 
+            grid-area: 1936;
+            grid-column: 1;
+            grid-row: 3;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #item4 { 
+            grid-area: 1944; 
+            grid-column: 1;
+            grid-row: 4;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #item5 {
+            grid-area: 1945;
+            grid-column: 1;
+            grid-row: 5;
+            border-right: 1px solid black;
+        }
+        .absolute-container {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            grid-template-columns: repeat(4 , 1fr);
+            grid-template-rows: repeat(5, 1fr);
+        }
+        .absolute-container div{
+            opacity: 0%;
+        }
+        #txt1922 {
+            grid-column: 1;
+            grid-row: 1;
+            transform: translateY(-0.85vh);
+            opacity: 100%;
+        }
+        #item1:hover {
+            cursor: not-allowed;
+        }
+        #txt1924 {
+            grid-column: 1;
+            grid-row: 2;
+            transform: translateY(-0.85vh);
+        }
+        #txt1936 {
+            grid-column: 1;
+            grid-row: 3;
+            transform: translateY(-0.85vh);
+        }
+        #txt1944 {
+            grid-column: 1;
+            grid-row: 4;
+            transform: translateY(-0.85vh);
+        }
+        #txt1945 {
+            grid-column: 1;
+            grid-row: 5;
+            transform: translateY(-0.85vh);
+        }
+        .it:hover {
+            cursor: pointer;
+        }
+        .main {
+            grid-area: main;
+            grid-column: 2 / 5;
+            grid-row: 1 / 5; 
+            text-align: left;
+        }
+        .main2 {
+            grid-area: main2;
+            grid-column: 2 / 3;
+            grid-row: 3 / 6; 
+            text-align: left;
+            border-top: 1px solid black;
+            transform: translateY(-1px);
+            background-color: white;
+        }
+        .img {
+            grid-area: img;
+            grid-column: 3 / 5;
+            grid-row: 3 / 6;
+            background-image: url(img1922.jpg);
+            border-left: 1px solid black;
+            border-top: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+            transform: translateY(-1px);
+        }
+
+    </style></head>
+
+    <body>
+        <img style="z-index: 199; position: absolute; margin: 1.5rem; margin-top: 0; width: 4vw;" src="logo.svg">
+        <div class="absolute-container">
+            <div id="txt1922" class="it"><img src="1922txt.svg"></div>
+            <div id="txt1924" class="it"><img src="1924txt.svg"></div>
+            <div id="txt1936" class="it"><img src="1936txt.svg"></div>
+            <div id="txt1944" class="it"><img src="1944txt.svg"></div>
+            <div id="txt1945" class="it"><img src="1945txt.svg"></div>
+        </div>
+        <div class="grid-container">
+            <div id="item1" class="it"><img src="1922.svg"></div>
+            <div id="item2" class="it" onmouseenter="yourmom('txt1924')" onmouseleave="yourdad('txt1924')" onclick='location.href="index2.html"'><img src="1924.svg"></div>
+            <div id="item3" class="it" onmouseenter="yourmom('txt1936')" onmouseleave="yourdad('txt1936')" onclick='location.href="index3.html"'><img src="1936.svg"></div>
+            <div id="item4" class="it" onmouseenter="yourmom('txt1944')" onmouseleave="yourdad('txt1944')" onclick='location.href="index4.html"'><img src="1944.svg"></div>
+            <div id="item5" class="it" onmouseenter="yourmom('txt1945')" onmouseleave="yourdad('txt1945')" onclick='location.href="index5.html"'><img src="1945.svg"></div>
+            <!--it's ugly but it works-->  
+            <div class="main">
+                <h1>DESIGN</h1>
+                <h2>Construction of a seaplane carrier was authorized by the Japanese government in its "eight-six" fleet program of 1918. A planned sister ship, named Shokaku, was cancelled in 1922 before any construction started. Hōshō was the second warship, after the British HMS Hermes, to be built from the keel up as an aircraft carrier, but was launched and completed earlier than Hermes.
+                    Hōshō was initially designed as a seaplane carrier like HMS Campania with a forward flying-off deck, 32 aircraft, four low-angle 14-centimeter (5.5 in) guns, and four anti-aircraft (AA) guns. The plan was revised after reports were received from Japanese observers with the Royal Navy in Europe about the desirability to be able to land aircraft on the ship. The new requirements were modeled on HMS Furious after she received her rear flight deck in 1918.
+                </h2>
+                <h1>SPECS</h1>
+                <h2>The ship was to be capable of 30 knots (56 km/h; 35 mph) and fitted with a forward flight deck, island and funnels amidships, and a large hangar aft. Shortly thereafter based on observations of landing trials on Furious and HMS Argus, the world's first flush-decked aircraft carrier, Hōshō's flight deck design was revised in April 1919. The island was removed and the funnels were moved to one side to create an unobstructed, full-length flight deck, and the ship was reclassified as an aircraft carrier. The ship's hull was based on that of a large cruiser and she was given a small island. Her three funnels were mounted on the starboard side and swiveled to lie horizontal during flight operations. Hōshō's designed speed was reduced to 25 knots (46 km/h; 29 mph), based on British experiences during World War I.
+                    Hōshō was completed with an overall length of 168.25 meters (552 ft). She had a beam of 17.98 meters (59 ft) and a mean draft of 6.17 meters (20 ft 3 in). The ship displaced 7,470 long tons (7,590 t) at standard load, and 9,494 long tons (9,646 t) at normal load. Her crew totaled 512 officers and men. The ship was almost completely unarmored.
+                </h2>
+            </div>
+            <div class="main2">
+                <h1>PROPULSION</h1>
+                <h2>Hōshō had two Parsons geared turbine sets with a total of 30,000 shaft horsepower (22,000 kW) driving two propeller shafts. Eight Kampon Type B water-tube boilers with a working pressure of 18.3 kg/cm2 (1,790 kPa; 260 psi) and a temperature of 138 °C (280 °F) provided steam to the turbines, although only four were oil-fired. The other four used a mix of oil and coal. The ship's designed speed was 25 knots, but she made 26.66 knots (49.37 km/h; 30.68 mph) from 31,117 shp (23,204 kW) on her sea trials on 30 November 1922. She carried 2,700 long tons (2,700 t) of fuel oil and 940 long tons (960 t) of coal, an extraordinary total for such a small ship, to give her a range of 8,680 nautical miles (16,080 km; 9,990 mi) at 12 knots (22 km/h; 14 mph).
+                    To reduce rolling and increase stability for aircraft operations, a gyrostabilizer produced by the American Sperry Gyroscope Company was installed. The installation initially proved unreliable as the Japanese technicians were badly trained by Sperry, but eventually the system proved its worth as the technicians gained experience.
+                </h2>
+            </div>
+            <div class="img"></div>
+        </div>
+        <script>
+            function yourmom(name) {
+                document.getElementById(name).style.opacity = 1
+            }
+            function yourdad(name) {
+                document.getElementById(name).style.opacity = 0
+            }
+        </script>
+    </body>
+<html>

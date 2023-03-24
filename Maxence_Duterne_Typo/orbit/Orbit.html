@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Orbit specimen — Maxence Duterne</title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+	<link href="../Menu/style.css" rel="stylesheet" />
+	<link href="orbitstyle.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script><link rel="stylesheet" href="css/orbitstyle">
+	<link href="../style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<header>
+		<a href="../Index.html" id="logo">M</a>
+		<nav>
+		</nav>
+	</header>
+
+	<script type="text/javascript">function fctdarkmode(){document.body.classList.toggle("dark-mode")}</script>
+	<div class="grid-container">
+	   <label class="switch"><input type="image" onclick="fctdarkmode()" src="Images/B1.svg" width="100%" height="100%"><span></span></label>
+	   <div class="S1">
+		  <img src="Images/S.svg" width="100%">
+		  <div class="S1txt" contenteditable="true">Try me</div>
+	   </div>
+	   <div class="Orbit" contenteditable="true">ORBIT</div>
+	   <div class="typewrite" data-period="1000" data-type='[ "Grotesque n°6 revival", "Editable specimen"]'><span class="wrap"></span></div>
+	   <div class="Texte1" contenteditable="true">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz /1234567890.,!?*\</div>
+	   <div class="Image1"><img src="Images/1.svg" width="100%" height="100%" contenteditable="false"></div>
+	   <div class="CorpsTexte1" contenteditable="true">Les poussières et les débris que les comètes abandonnent à chacun de leurs retours près du Soleil se dispersent peu à peu le long de leurs orbites en donnant naissance à des essaims de météorites.</div>
+	   <div class="CorpsTexte2" contenteditable="true">Lorsque la Terre, dans sa ronde autour du Soleil, croise ces essaims, les petits corps qu’ils rassemblent s’abattent dans l’atmosphère en y provoquant des pluies d’étoiles filantes. Certaines comètes connaissent un destin tragique. Leur noyau se fragmente brutalement, généralement après un passage à très courte distance du Soleil. Il peut arriver aussi qu’une comète heurte une planète: en juillet 1994, les fragments du noyau de la comète Shoemaker-Levy se sont précipités sur Jupiter; de telles collisions doivent être fréquentes à l’échelle cosmique et il n’est pas exclu que l’une d’elles ait provoqué, sur la Terre, il y a plus de 65 millions d’années, la disparition brutale, de nombreuses espèces vivantes. La découverte de SL9 a tout de suite été remarquable pour deux raisons...</div>
+	   <div class="TexteG" contenteditable="true">G</div>
+	   <div class="Texte20" contenteditable="true">20-* #/07 1969</div>
+	   <div class="Download"><a href="../Fonts/Orbit.woff">Download</a></div>
+	   <div class="Out" contenteditable="false">2022<br>Maxence Duterne<br>Revival de la Grotesque n°6<br>Atelier de typographie, ENSAV La Cambre</div>
+	</div>
+	<script>var TxtType=function(t,e,i){this.toRotate=e,this.el=t,this.loopNum=0,this.period=parseInt(i,10)||2e3,this.txt="",this.tick(),this.isDeleting=!1};TxtType.prototype.tick=function(){var t=this.loopNum%this.toRotate.length,e=this.toRotate[t];this.isDeleting?this.txt=e.substring(0,this.txt.length-1):this.txt=e.substring(0,this.txt.length+1),this.el.innerHTML='<span class="wrap">'+this.txt+"</span>";var i=this,s=200-100*Math.random();this.isDeleting&&(s/=2),this.isDeleting||this.txt!==e?this.isDeleting&&""===this.txt&&(this.isDeleting=!1,this.loopNum++,s=500):(s=this.period,this.isDeleting=!0),setTimeout(function(){i.tick()},s)},window.onload=function(){for(var t=document.getElementsByClassName("typewrite"),e=0;e<t.length;e++){var i=t[e].getAttribute("data-type"),s=t[e].getAttribute("data-period");i&&new TxtType(t[e],JSON.parse(i),s)}var n=document.createElement("style");n.type="text/css",n.innerHTML=".typewrite > .wrap { border-right: 0.08em solid var(--body-color)}",document.body.appendChild(n)}</script>
+</body>
+</html>

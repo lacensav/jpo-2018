@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'GOTHIC';  
+    src: url('fontes/terminal-grotesque.ttf');
+  }
+@font-face {
+    font-family:'pixel';
+    src: url('fontes/FT88-Gothique.otf');
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(68, 255, 0);
+}
+.titre {
+    font-size: 50px;
+    margin-left: -80%;
+    text-align: left;
+    word-spacing: 50px;
+font-family:"GOTHIC";
+animation: Scroll 10s linear infinite;
+
+}
+@keyframes Scroll {
+    0% {
+        transform: translateX(-0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+
+  }
+.TEXT{
+    margin-top: 3%;
+    font-size: 50px;
+    margin-right:2.5%;
+    word-spacing: 20px;
+font-family:"GOTHIC";
+text-align: center;
+}
+.TEXT:hover{
+    color: rgb(255, 42, 212);
+}
+.titre:hover{
+    color: rgb(255, 42, 212);
+}
+
+.S{
+    margin-top: 5%;
+    margin-left: 12%;
+
+font-family: "pixel";
+font-size: 500%;
+margin-bottom: 5%;
+
+}
+.I{
+    margin-top: -3%;
+    margin-left: 26%;
+    font-family: "pixel";
+    font-size: 500%;
+    margin-bottom: 5%;
+
+
+    }
+    .T{
+        margin-left: 43%;
+        font-family: "pixel";
+        font-size: 500%;
+    margin-top: -4%;
+ 
+        }
+        .E{
+            margin-left: 63%;
+            font-family: "pixel";
+            font-size: 500%;
+            margin-top: -1%;
+         
+   
+            }
+        .SS{
+            margin-left: 83%;
+            font-family: "pixel";
+            font-size: 500%;
+            margin-top: -1%;
+         
+   
+            }
+            @keyframes vibration{
+                0% { transform: translate(1px, 1px) rotate(0deg); }
+                10% { transform: translate(-1px, -2px) rotate(-1deg); }
+                20% { transform: translate(-2px, 0px) rotate(1deg); }
+                30% { transform: translate(3px, 3px) rotate(0deg); }
+                40% { transform: translate(1px, -1px) rotate(1deg); }
+                50% { transform: translate(-1px, 2px) rotate(-1deg); }
+                60% { transform: translate(-3px, 1px) rotate(0deg); }
+                70% { transform: translate(2px, 1px) rotate(-1deg); }
+                80% { transform: translate(-1px, -1px) rotate(1deg); }
+                90% { transform: translate(2px, 2px) rotate(0deg); }
+                100% { transform: translate(1px, -2px) rotate(-1deg); }
+              }
+            .S:hover{
+                text-transform: uppercase;
+               font-size: 1200%;
+               color: rgb(255, 255, 255);
+               animation: vibration 0.8s;
+               animation-iteration-count: infinite;
+               visibility: visible;
+               cursor: pointer;
+               
+            }
+            .I:hover{
+                text-transform: uppercase;
+                font-size: 1200%;
+                color: rgb(255, 255, 255);
+                animation: vibration 0.8s;
+                animation-iteration-count: infinite;
+                visibility: visible;
+                cursor: pointer;
+             }
+             .T:hover{
+                text-transform: uppercase;
+                font-size: 1200%;
+                color: rgb(255, 255, 255);
+                animation: vibration 0.8s;
+                animation-iteration-count: infinite;
+                visibility: visible;
+                cursor: pointer;
+             }
+             .E:hover{
+                text-transform: uppercase;
+                font-size: 1200%;
+                color: rgb(255, 255, 255);
+                animation: vibration 0.8s;
+                animation-iteration-count: infinite;
+                visibility: visible;
+                cursor: pointer;
+             }
+             .SS:hover{
+                text-transform: uppercase;
+                font-size: 1200%;
+                color: rgb(255, 255, 255);
+                animation: vibration 0.8s;
+                animation-iteration-count: infinite;
+                visibility: visible;
+                cursor: pointer;
+             }
+             a {
+                text-decoration: none;
+                color: black
+               }
+
+img{
+    height: 60px;
+    margin-bottom: -10%;
+    margin-left: 20%;
+    transform: rotate(0.5turn);
+    animation: vibration 0.4s;
+    animation-iteration-count: infinite;
+}
+

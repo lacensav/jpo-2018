@@ -1,0 +1,34 @@
+body {
+    background-image: url(https://c.tenor.com/WKezd06gA40AAAAC/tenor.gif);
+    font-family: courier;
+    color:aliceblue;
+    margin-top: 0mm;
+    margin-bottom: 0mm;
+    margin-right: 30mm;
+    margin-left: 30mm;
+
+/*je n'arrive pas à changer la police */
+
+        font-family: "myfont";
+        src: url("Typo/Baskervville-Regular.woff") format('woff');
+}
+@font-face {
+    font-family: "myfont";
+        src: url("Typo/Fantome-Regular.woff") format('woff');
+  }
+a:link {color:rgb(103, 0, 0);text-decoration:none;}
+a:visited {color:rgb(55, 123, 37);text-decoration:none;}
+a:hover {color:rgb(0, 64, 103);text-decoration:underline;}
+
+h1 {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    font-family: courier;
+    color:rgb(55, 123, 37);
+    border-bottom-style: solid;
+}
+
+h2 {
+    color:rgb(55, 123, 37);
+}

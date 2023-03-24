@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link rel="icon" href="ptitlogo.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <title>Roobert</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            top: 0;
+            box-sizing: border-box;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        @font-face {
+            font-family: 'Roobert';
+            src: url('RoobertRegular.woff') format('woff')
+        }   
+        ::selection {
+            background: black; /* WebKit/Blink Browsers */
+            color: white;
+        }
+        ::-moz-selection {
+            background: black; /* Gecko Browsers */
+            color: white;
+        }
+        h1 {
+            font-size: 2rem;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin-bottom: 0;
+            font-weight: 10;
+            color: black;
+        }
+        h2 {
+            font-size: 8vh;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin-bottom: 0;
+            font-weight: 10;
+            color: black;
+            padding: 6vh;
+            background-color: #e3e2e2;
+        }
+        h2:hover {
+            text-transform: capitalize;
+            background-color: #eee;
+        }
+        .text {
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            background-color: #eee;
+            width: 100%;
+            font-size: 10rem;
+            padding-bottom: 2.5rem;
+            padding-left: 1rem;
+        }
+        .text:focus {
+            outline: none;
+        }
+        .grid-container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(5 , 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            padding: auto;
+            text-align: center;
+        }
+        /* .tit {
+            grid-area: tit;
+            grid-column: 1 / 6;
+            grid-row: 1 / 2; 
+            text-align: left;        
+        } */
+
+        @media screen and (max-width: 1070px){
+            .grid-container {
+                grid-template-columns: repeat(3 , 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" class="text" placeholder="roobert">
+        <h1 style="padding-left: 1.7rem; margin-top: -2.5rem; color: #6c6c6c;">^ try me here ^</h1>
+    </div>
+    <div class="grid-container">
+        <h2>a</h2>
+        <h2>b</h2>
+        <h2>c</h2>
+        <h2>d</h2>
+        <h2>e</h2>
+        <h2>f</h2>
+        <h2>g</h2>
+        <h2>h</h2>
+        <h2>i</h2>
+        <h2>j</h2>
+        <h2>k</h2>
+        <h2>l</h2>
+        <h2>m</h2>
+        <h2>n</h2>
+        <h2>o</h2>
+        <h2>p</h2>
+        <h2>q</h2>
+        <h2>r</h2>
+        <h2>s</h2>
+        <h2>t</h2>
+        <h2>u</h2>
+        <h2>v</h2>
+        <h2>w</h2>
+        <h2>x</h2>
+        <h2>y</h2>
+        <h2>z</h2>
+        <h2>!</h2>
+        <h2>?</h2>
+        <h2>{</h2>
+        <h2>(</h2>
+    </div>
+</body>
+</html>

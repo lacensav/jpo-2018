@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <link rel="icon" href="ptitlogo.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <title>Nathan F.</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            top: 0;
+            box-sizing: border-box;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        @font-face {
+            font-family: 'Roobert';
+            src: url('RoobertRegular.woff') format('woff')
+        }   
+        ::selection {
+            background: black; /* WebKit/Blink Browsers */
+            color: white;
+        }
+        ::-moz-selection {
+            background: black; /* Gecko Browsers */
+            color: white;
+        }
+        h1 {
+            font-size: 10rem;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin-bottom: 0;
+            font-weight: 10;
+            color: black ;
+            border: 0;
+            padding-left: 1rem;
+            line-height: 8.5rem;
+            padding-top: 3rem;
+            padding-bottom: 10rem;
+        }
+        h2 {
+            font-size: 10rem;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin-bottom: 0;
+            font-weight: 10;
+            color: black;
+            border: 0;
+            border-bottom: 1px;
+            border-style: solid;
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1rem;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin-bottom: 0;
+            font-weight: 10;
+            color: black;
+            padding-bottom: 3rem;
+            padding-left: 1.8rem; 
+            padding-left: 1.8rem; 
+        }
+        .header {
+            display: flex;
+            text-align: right;
+            color: black;
+            border: 0;
+            border-bottom: 1px;
+            border-style: solid;
+        }
+        .header h3 {
+            padding-bottom: 0;
+        }
+        .header h3:hover {
+            text-decoration: underline;
+            text-decoration-style: wavy;
+        }
+        .grid-cont {
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        .grid-cont div {
+            border: 0;
+            border-bottom: 1px;
+            border-style: solid;
+            border-color: black;
+        }
+        
+        .hosho {
+            background: url(img1936.jpg) no-repeat;
+            background-size: cover;
+        }
+        .blurbox {
+            backdrop-filter: blur(4px);
+            transition: 0.3s;
+        }  
+        .blurbox:hover {
+            animation: cubic-bezier(0.39, 0.575, 0.565, 1);
+            filter: invert();
+            cursor: pointer;
+        }
+        .roobert {
+            background-image: url(pic2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* .roobert > h1, .roobert h3 {
+            color: gray ;
+        } */
+        .art {
+            background-image: url(pic3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .art-animated {
+            background-image: url(dvd.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media screen and (max-width: 1070px){
+            h1 {font-size: 5rem; line-height: 5.5rem;}
+            h2 {font-size: 5rem;}
+            h3 {font-size: 1.5rem; padding-right: 1.8rem;}
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Portfolio</h2>
+    <div class="header">
+        <h3 style="cursor: pointer;" onclick='location.href="https://www.noirextreme.com/cv_new"'>other work</h1>
+        <h3 style="cursor: pointer;" onclick='location.href="mailto:nathan.francois@lacambre.be"'>contact</h1>
+        <h3 style="cursor: pointer;" onclick='location.href="https://www.lacambre.be"'>school</h1>
+    </div>
+    <div class="grid-cont">
+        <div class="hosho">
+            <div class="blurbox" onclick='location.href="https://hosho.netlify.app/"'>
+            <h1>Re-make <br>
+                Wikipedia</h1>
+            <h3>Présentation du porte-avion japonais Hōshō, il date de l'entre guerre et c'est un des premiers vrais porte-avion qui a vu le jour. 
+                <br> J'ai organisé la page wikipedia par ordre chronologique dans une colonne à gauche.</h3>
+            </div>
+        </div>
+        <div class="roobert">
+            <div class="blurbox" onclick='location.href="https://roobert.netlify.app/"'>
+            <h1>Présentation <br>
+                Font</h1>
+            <h3>Site de présentation du font Roobert, avec une text box interactive pour essayer la typo, et un display des caractère dans un grid en dessous de ça. 
+                <br> Le site est également responsive, ce qui veut dire qu'il fonctionne également sur des appareils mobiles.</h3>
+            </div>
+        </div>
+        <div class="art">
+            <div class="blurbox" id="op" onclick='location.href="https://wavezcss.netlify.app"'>
+            <h1 id="h1">Assemblage <br>
+                CSS</h1>
+            <h3 id="h3">Composition de formes en html pour créer une image d'un navire en mer.</h3>
+            </div>
+        </div>
+        <div class="art-animated">
+            <div class="blurbox" onclick='location.href="https://dvdrebonds.netlify.app"'>
+            <h1>Assemblage <br>
+                CSS Anime</h1>
+            <h3>Une recréation pas si fidèle du fameux splash screen DVD.</h3>
+            </div>
+        </div>
+    </div>
+</body>

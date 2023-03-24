@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Pilowlava-Regular";
+  src: url("../Typo/Pilowlava-Regular.woff") format("woff");
+}
+
+@keyframes animation1 {
+  0% {color: rgba(255, 255, 255, 0);}
+  100% {color: white;}
+}
+
+:root {
+  --accent: #FF2A16;
+  }
+.titre2 {
+  display: none;
+}
+nav {
+  text-align: center;
+  font-size: 20pt;
+  margin-right: 10mm;
+  list-style-type: none;
+  display: inline;
+  color: black;
+}
+
+nav li {
+  text-align: center;
+  margin-top: 0mm;
+  font-size: 20pt;
+  margin-right: 10mm;
+  list-style-type: none;
+  display: inline;
+  color: black;
+}
+
+.ElementA, .ElementB, .ElementC {
+  animation: animation1 12s;
+  animation-timing-function: forwards;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+nav li:hover {
+  cursor: help;
+}
+
+body {
+  font-family: "Pilowlava-Regular";
+}
+
+h1 {
+  text-align: center;
+  margin-top: 15vw;
+  margin-bottom: 1mm;
+  font-size: 110pt;
+  color: white;
+  animation-timing-function: forwards;
+  animation: animation1 10s;
+}
+
+@media screen and (max-width: 1000px) { 
+  body {
+    background-size: cover;
+    background-image: url(../image/fondRougeH.jpg);
+  }
+  .titre2, .premier li {
+    display: block;
+  }
+  .titre {
+    display: none;
+  }
+
+  .titre2 {
+    font-size: 175pt;
+  }
+
+  h1 {
+    font-size: 75pt;
+  }
+  }

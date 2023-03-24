@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="icon" href="ptitlogo.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <title>bounce</title>
+    <style>
+        .dvd {
+            animation-name: woosh;
+            animation-iteration-count: infinite;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+        }
+        @keyframes woosh {
+        0% {
+            transform: translate(0px, 0px);
+            }
+        20% {
+            transform: translate(93vw, 34vh);
+        }
+        40% {
+            transform: translate(25vw, 87.3vh);
+        }
+        60% {
+            transform: translate(-1vw, 32vh);
+        }
+        80% {
+            transform: translate(45vw, -5vh);
+        }
+        100% {
+            transform: translate(93vw, 86vh);
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="dvd" style="width: 15vh; height: 15vh; background-image: url(dvd.png); background-size: cover;"></div>
+</body>
+</html>

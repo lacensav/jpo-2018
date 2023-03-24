@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Répertoire</title>
+
+</head>
+<body>
+
+    <div class="grid-container1">
+        <div class="item1">Start</div>
+        <div class="item2">Réalisé dans le cadre de cours d'Art Numérique La Cambre ENSAV</div>
+        <div class="item3" id="time"></div>  
+      </div>
+
+    <div class="grid-container">
+        <div class="grid-item"><img class="Icon" src="image/logo wikipedia.png" alt="dossier"></div>
+        <div class="grid-item"><img class="Icon" src="image/dossier1.png" alt="dossier"></div>
+        <div class="grid-item"></div>  
+        <div class="grid-item"></div>
+        <div class="grid-item"><img class="Bas" src="image/mail2.png" alt="mail"></div>
+        <div class="grid-item"><a href="https://frank-0cean.netlify.app/">Page Wikipédia</a></div>
+        <div class="grid-item"><div><a href="https://pilowlava.netlify.app/">Specimen</a></div></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"><a href="mailto:mariehenrietterixhon@outlook.fr">Courrier</a></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"><img class="Icon" src="image/dossier1.png" alt="dossier"></div>
+        <div class="grid-item"><img class="Icon" src="image/dossier1.png" alt="dossier"></div>
+        <div class="grid-item"><img class="Corbeille" src="image/corbeille.png" alt="dossier"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"><a href="https://cachette.netlify.app/">Dessin</a></div> 
+        <div class="grid-item"><a href="https://alapecheauxcanards.netlify.app/">Animation</a></div>
+        <div class="grid-item"><a href="https://bootsycollins.netlify.app/">Corbeille</a></div>
+      </div>
+
+<script>
+    let time2 = document.getElementById("time");
+    setInterval(() => {
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();
+    },1000)
+
+</script>
+</body>
+</html>

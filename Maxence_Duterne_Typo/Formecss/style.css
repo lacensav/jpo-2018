@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+.C1{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 50vw;
+  width: 50vw;
+  background: red;
+  rotate: 0deg;
+  opacity: 50%;
+  border-radius: 50%;
+  z-index: 1;
+}
+.C2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 50vw;
+  width: 40vw;
+  background: green;
+  rotate: 0deg;
+  opacity: 70%;
+  border-radius: 50%;
+  z-index: 2;
+}
+.C3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 50vw;
+  width: 30vw;
+  background: blue;
+  rotate: 0deg;
+  opacity: 50%;
+  border-radius: 50%;
+  z-index: 3;
+}

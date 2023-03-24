@@ -1,0 +1,272 @@
+
+html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+  	margin: 0;
+  	padding: 0;
+  	border: 0;
+  	font-size: 100%;
+  	font: inherit;
+  	vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+  	display: block;
+  }
+  body {
+  	line-height: 1;
+  }
+  ol, ul {
+  	list-style: none;
+  }
+  blockquote, q {
+  	quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+  	content: '';
+  	content: none;
+  }
+  table {
+  	border-collapse: collapse;
+  	border-spacing: 0;
+  }
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+body{
+  background-color: rgb(14, 14, 14);
+}
+
+
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    position: fixed;
+    line-height: 37px;
+    color: beige;
+    z-index: 6;
+    padding: 10px;
+}
+.title:hover{
+    color: black;
+}
+
+
+
+.menu{
+  display: inline-block;
+  color: beige;
+  position: fixed;
+  right: 0;
+  top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 100;
+  padding: 10px;
+}
+.menu a{
+  color: beige;
+  text-decoration: none;
+
+}
+.menu a:hover{
+  color: black;
+}
+
+
+
+.couloir {
+
+    position: absolute;
+    top: 1450px;
+    left: 0px;
+    z-index: -6;
+
+}
+.casserole {
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -5;
+
+}
+.poubelle {
+    position: absolute;
+    top: 500px;
+    right : 80px;
+    z-index: -4;
+}
+.laverie {
+    position: absolute;
+    top: 3000px;
+    right: 0px;
+    z-index: -3;
+}
+.bagagerie {
+
+    position: absolute;
+    top: 1700px;
+    left : 310px;
+    z-index: -4;
+
+}
+.bagagerie2 {
+
+    position: absolute;
+    top: 2700px;
+    left : 300px;
+    z-index: -4;
+
+}
+.cantine {
+    position: absolute;
+    top: 1300px;
+    left : -20px;
+    z-index: -4;
+}
+.couloir2 {
+
+    position: absolute;
+    top: 2900px;
+    left: 0px;
+    z-index: -7;
+}
+.couloir3 {
+
+    position: absolute;
+    top: 3700px;
+    left: 0px;
+    z-index: 3;
+}
+.lessive {
+    position: absolute;
+    top: 3700px;
+    left: 850px;
+    z-index: 3;
+}
+.bibli {
+
+    position: absolute;
+    top: 4900px;
+    left: 0px;
+    z-index: -7;
+}
+.chambre {
+
+    position: absolute;
+    top: 4700px;
+    left: 1000px;
+    z-index: 3;
+
+}
+.classe {
+    position: absolute;
+    top: 5630px;
+    left: 20px;
+    z-index: 3;
+}
+
+.page_01{
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size: 40px;
+    padding: 100px;
+    padding-left: 60px;
+    padding-top: 200px;
+    font-weight: bold;
+
+}
+
+.page_01bis {
+
+    padding: 100px;
+    padding-left: 600px;
+    padding-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
+    color: whitesmoke;
+    font-size: 35px;
+}
+
+.page_02 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size: 40px;
+    padding: 100px;
+    padding-left: 60px;
+    padding-top: 200px;
+    font-weight: bold;
+
+}
+
+.page_02bis {
+
+    padding: 100px;
+    padding-left: 600px;
+    padding-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
+    color: whitesmoke;
+    font-size: 35px;
+}
+
+.page_03 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size: 40px;
+    padding: 100px;
+    padding-left: 60px;
+    padding-top: 200px;
+    font-weight: bold;
+
+}
+
+.page_03bis {
+
+    padding: 100px;
+    padding-left: 600px;
+    padding-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
+    color: whitesmoke;
+    font-size: 35px;
+}
+
+.entree02{
+
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    z-index: 3;
+
+}
+
+.cour{
+
+    position: absolute;
+    top: 700px;
+    left: 700px;
+    z-index: 2;
+
+}

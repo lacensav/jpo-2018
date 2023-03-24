@@ -1,0 +1,54 @@
+@keyframes rotation {
+  from {
+      rotate: 0deg;
+ }
+  to {
+      rotate: 360deg;
+ }
+}
+body {
+  background-color: rgb(0, 0, 0);
+}
+.C1{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 50vw;
+  width: 50vw;
+  background: conic-gradient(from 0deg, red,rgba(0, 0, 0, 0));
+  rotate: 0deg;
+  opacity: 50%;
+  border-radius: 50%;
+  z-index: 1;
+  animation: rotation 10s infinite linear;
+}
+.C2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 50vw;
+  width: 50vw;
+  background: conic-gradient(from 0deg, green,rgba(0, 0, 0, 0));
+  rotate: 0deg;
+  opacity: 70%;
+  border-radius: 50%;
+  z-index: 2;
+  animation: rotation 11s infinite linear;
+}
+.C3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 50vw;
+  width: 50vw;
+  background: conic-gradient(from 0deg,blue,rgba(0, 0, 0, 0));
+  rotate: 0deg;
+  opacity: 50%;
+  border-radius: 50%;
+  z-index: 3;
+  animation: rotation 12s infinite linear;
+}

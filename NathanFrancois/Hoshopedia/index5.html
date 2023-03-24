@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <link rel="icon" href="ptitlogo.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <title>Aircraft Carrier Hōshō</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            top: 0;
+            box-sizing: border-box;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        @font-face {
+            font-family: 'Roobert';
+            src: url('RoobertRegular.woff') format('woff')
+        }   
+        ::selection {
+            background: white; /* WebKit/Blink Browsers */
+            color: black;
+        }
+        ::-moz-selection {
+            background: white; /* Gecko Browsers */
+            color: black;
+        }
+        h1 {
+            font-size: 1rem;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin: 2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            font-weight: 1;
+            color: white;
+        }
+        h2 {
+            font-size: 0.7rem;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            font-weight: 1;
+            color: white;
+        }
+        .grid-container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4 , 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            padding: auto;
+            text-align: center;
+            background-color: black;
+        }
+        .grid-container div {
+            z-index: 2;
+        }
+        .it {
+            display: flex;
+            vertical-align: auto;
+        }
+        .it img {
+            filter: invert();
+            z-index: 99;
+        }
+        #item1 { 
+            grid-area: 1922;
+            grid-column: 1;
+            grid-row: 1;
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+        #item2 { 
+            grid-area: 1924;
+            grid-column: 1;
+            grid-row: 2;
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+        #item3 { 
+            grid-area: 1936;
+            grid-column: 1;
+            grid-row: 3;
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+        #item4 { 
+            grid-area: 1944; 
+            grid-column: 1;
+            grid-row: 4;
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+        #item5 {
+            grid-area: 1945;
+            grid-column: 1;
+            grid-row: 5;
+            border-right: 1px solid white;
+        }
+        .absolute-container {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            grid-template-columns: repeat(4 , 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            z-index: 1;
+        }
+        .absolute-container div{
+            opacity: 0%;
+        }
+        .absolute-container div img {
+            filter: none;
+        }
+        #txt1922 {
+            grid-column: 1;
+            grid-row: 1;
+            transform: translateY(-0.85vh);
+        }
+        #txt1924 {
+            grid-column: 1;
+            grid-row: 2;
+            transform: translateY(-0.85vh);
+        }
+        #txt1936 {
+            grid-column: 1;
+            grid-row: 3;
+            transform: translateY(-0.85vh);
+        }
+        #txt1944 {
+            grid-column: 1;
+            grid-row: 4;
+            transform: translateY(-0.85vh);
+        }
+        #txt1945 {
+            grid-column: 1;
+            grid-row: 5;
+            transform: translateY(-0.84vh);
+            opacity: 100%;
+        }
+        #item5:hover {
+            cursor: not-allowed;
+        }
+        .it:hover {
+            cursor: pointer;
+        }
+        .main {
+            grid-area: main;
+            grid-column: 2 / 5;
+            grid-row: 1 / 5; 
+            text-align: left;        
+        }
+        .main2 {
+            grid-area: main2;
+            grid-column: 2 / 3;
+            grid-row: 3 / 6; 
+            text-align: left;
+            border-top: 1px solid white;
+            transform: translateY(-1px);        
+        }
+        .img {
+            grid-area: img;
+            grid-column: 3 / 5;
+            grid-row: 3 / 6;
+            background-image: url(img1945.jpg);
+            border-left: 1px solid white;
+            border-top: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+            transform: translateY(-1px);
+        }
+
+    </style></head>
+
+    <body>
+        <img style="z-index: 199; position: absolute; margin: 1.5rem; margin-top: 0; width: 4vw; filter: invert(); background-color: white;" src="logo.svg">
+        <div class="absolute-container">
+            <div id="txt1922" class="it"><img src="1922txt.svg"></div>
+            <div id="txt1924" class="it"><img src="1924txt.svg"></div>
+            <div id="txt1936" class="it"><img src="1936txt.svg"></div>
+            <div id="txt1944" class="it"><img src="1944txt.svg"></div>
+            <div id="txt1945" class="it"><img src="1945txt.svg"></div>
+        </div>
+        <div class="grid-container">
+            <div id="item1" class="it" onmouseenter="yourmom('txt1922')" onmouseleave="yourdad('txt1922')" onclick='location.href="index.html"'><img src="1922.svg"></div>
+            <div id="item2" class="it" onmouseenter="yourmom('txt1924')" onmouseleave="yourdad('txt1924')" onclick='location.href="index2.html"'><img src="1924.svg"></div>
+            <div id="item3" class="it" onmouseenter="yourmom('txt1936')" onmouseleave="yourdad('txt1936')" onclick='location.href="index3.html"'><img src="1936.svg"></div>
+            <div id="item4" class="it" onmouseenter="yourmom('txt1944')" onmouseleave="yourdad('txt1944')" onclick='location.href="index4.html"'><img src="1944.svg"></div>
+            <div id="item5" class="it"><img src="1945.svg"></div>
+            <!--it's ugly but it works-->  
+            <div class="main">
+                <h1>TRAINING SHIP</h1>
+                <h2>After her return to Japan, Hōshō was transferred to the Third Fleet, unofficially assigned to the training fleet (later called the Mobile Force Training Force), and officially assigned in October. She conducted flight training in the Inland Sea for aircraft that flew in from shore bases, since no aircraft were based onboard Hōshō. On 15 January 1943, the 50th Air Flotilla was created for carrier aircrew training and both Hōshō and Ryūhō were assigned to the new unit. The two ships provided carrier landing training and served as target ships for torpedo training. In January 1944, Hōshō was reassigned to the 12th Air Fleet, then to the Combined Fleet, but continued to perform the same mission of training fleet carrier pilots in the Inland Sea. In this role, Hōshō shuttled back and forth between Kure and the Western Inland Sea, spending equal amounts of time at each location.
+                    <br>
+                    In order to service new and larger aircraft like the Nakajima B6N "Jill" torpedo bomber and the Yokosuka D4Y "Judy" dive bomber, the flight deck was extended over 6 meters (19 ft 8 in) at each end to a total length of 180.8 meters (593 ft 2 in) from 27 March to 26 April 1944. Hōshō also received new arresting gear and a new crash barrier. The additional weight high up in the ship adversely affected her stability and she was restricted from operations in bad weather lest she capsize. At some point during the war the ship's 14 cm guns were removed and she received about twenty 25-millimeter Type 96 autocannons in single mounts. They fired .25-kilogram (0.55 lb) projectiles at a muzzle velocity of 900 m/s (3,000 ft/s); at 50°, this provided a maximum range of 7,500 meters (8,202 yd), and an effective ceiling of 5,500 meters (18,000 ft). The 15-round magazines needed to be changed frequently, and the maximum effective rate of fire was only between 110 and 120 rounds per minute.
+                </h2>
+            </div>
+            <div class="main2">
+                <h1>POST-WAR</h1>
+                <h2>The ship was turned over to Allied forces at the time of the surrender of Japan on 2 September and was stricken from the navy list on 5 October. Hōshō then served as a repatriation transport to retrieve Japanese servicemen and civilians stationed overseas and return them to Japan. In October and November 1945, accompanied by the cruiser Kashima, she carried 700 passengers from Wotje Atoll, 311 from Jaluit Atoll, and an undocumented number from Enewetak Atoll to Uraga, Kanagawa.
+                    <br>
+                    In December 1945, Hōshō's overhanging flight deck at the bow was cut off to improve visibility from the bridge and her hangars were modified to carry more passengers. Thereafter, she undertook more repatriation missions beginning with one to Wewak on 5 January 1946 and subsequent trips to China. In total, the carrier made nine repatriation trips before 15 August 1946 and transported about 40,000 passengers. Hōshō was transferred to the Home Ministry on 31 August for disposal. She was scrapped in Osaka from 2 September 1946 to 1 May 1947 by the Kyōwa Shipbuilding Company.
+                </h2>
+            </div>
+            <div class="img"></div>
+        </div>
+        <script>
+            function yourmom(name) {
+                document.getElementById(name).style.opacity = 1
+            }
+            function yourdad(name) {
+                document.getElementById(name).style.opacity = 0
+            }
+        </script>
+    </body>
+<html>

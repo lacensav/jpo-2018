@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <link rel="icon" href="ptitlogo.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <title>Aircraft Carrier Hōshō</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            top: 0;
+            box-sizing: border-box;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        @font-face {
+            font-family: 'Roobert';
+            src: url('RoobertRegular.woff') format('woff')
+        }   
+        ::selection {
+            background: rgba(0, 0, 0); /* WebKit/Blink Browsers */
+            color: white;
+        }
+        ::-moz-selection {
+            background: rgba(0, 0, 0); /* Gecko Browsers */
+            color: white;
+        }
+        h1 {
+            font-size: 1rem;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin: 2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            font-weight: 1;
+        }
+        h2 {
+            font-size: 0.7rem;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            font-weight: 1;
+        }
+        .grid-container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4 , 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            padding: auto;
+            text-align: center;
+        }
+        .grid-container div {
+            z-index: 99;
+        }
+        .it {
+            display: flex;
+            vertical-align: auto;
+        }
+        #item1 { 
+            grid-area: 1922;
+            grid-column: 1;
+            grid-row: 1;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #item2 { 
+            grid-area: 1924;
+            grid-column: 1;
+            grid-row: 2;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #item3 { 
+            grid-area: 1936;
+            grid-column: 1;
+            grid-row: 3;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #item4 { 
+            grid-area: 1944; 
+            grid-column: 1;
+            grid-row: 4;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #item5 {
+            grid-area: 1945;
+            grid-column: 1;
+            grid-row: 5;
+            border-right: 1px solid black;
+        }
+        .absolute-container {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            grid-template-columns: repeat(4 , 1fr);
+            grid-template-rows: repeat(5, 1fr);
+        }
+        .absolute-container div{
+            opacity: 0%;
+        }
+        #txt1922 {
+            grid-column: 1;
+            grid-row: 1;
+            transform: translateY(-0.85vh);
+        }
+        #txt1924 {
+            grid-column: 1;
+            grid-row: 2;
+            transform: translateY(-0.85vh);
+        }
+        #txt1936 {
+            grid-column: 1;
+            grid-row: 3;
+            transform: translateY(-0.85vh);
+        }
+        #txt1944 {
+            grid-column: 1;
+            grid-row: 4;
+            transform: translateY(-0.85vh);
+            opacity: 100%;
+        }
+        #item4:hover {
+            cursor: not-allowed;
+        }
+        #txt1945 {
+            grid-column: 1;
+            grid-row: 5;
+            transform: translateY(-0.85vh);
+        }
+        .it:hover {
+            cursor: pointer;
+        }
+        .main {
+            grid-area: main;
+            grid-column: 2 / 5;
+            grid-row: 1 / 5; 
+            text-align: left;
+        }
+        .main2 {
+            grid-area: main2;
+            grid-column: 2 / 3;
+            grid-row: 3 / 6; 
+            text-align: left;
+            border-top: 1px solid black;
+            transform: translateY(-1px);
+            background-color: white;
+        }
+        .img {
+            grid-area: img;
+            grid-column: 3 / 5;
+            grid-row: 3 / 6;
+            background-image: url(img1944.png);
+            border-left: 1px solid black;
+            border-top: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+            transform: translateY(-1px);
+        }
+
+    </style></head>
+
+    <body>
+        <img style="z-index: 199; position: absolute; margin: 1.5rem; margin-top: 0; width: 4vw;" src="logo.svg">
+        <div class="absolute-container">
+            <div id="txt1922" class="it"><img src="1922txt.svg"></div>
+            <div id="txt1924" class="it"><img src="1924txt.svg"></div>
+            <div id="txt1936" class="it"><img src="1936txt.svg"></div>
+            <div id="txt1944" class="it"><img src="1944txt.svg"></div>
+            <div id="txt1945" class="it"><img src="1945txt.svg"></div>
+        </div>
+        <div class="grid-container">
+            <div id="item1" class="it" onmouseenter="yourmom('txt1922')" onmouseleave="yourdad('txt1922')" onclick='location.href="index.html"'><img src="1922.svg"></div>
+            <div id="item2" class="it" onmouseenter="yourmom('txt1924')" onmouseleave="yourdad('txt1924')" onclick='location.href="index2.html"'><img src="1924.svg"></div>
+            <div id="item3" class="it" onmouseenter="yourmom('txt1936')" onmouseleave="yourdad('txt1936')" onclick='location.href="index3.html"'><img src="1936.svg"></div>
+            <div id="item4" class="it"><img src="1944.svg"></div>
+            <div id="item5" class="it" onmouseenter="yourmom('txt1945')" onmouseleave="yourdad('txt1945')" onclick='location.href="index5.html"'><img src="1945.svg"></div>
+            <!--it's ugly but it works-->  
+            <div class="main">
+                <h1>SHANGAI</h1>
+                <h2>Along with Kaga, Hōshō was assigned to the First Carrier Division and sent to China during the Shanghai Incident that began in January 1932. Operating with the Third Fleet, Hōshō arrived at the mouth of the Yangtze River on 1 February. Her aircraft participated in the IJN's first aerial combat on 5 February when three fighters, escorting two attack aircraft, were engaged by nine Chinese fighters over Shanghai; one Chinese fighter was damaged, although the Japanese pilots made no claim. Two days later, the two carriers sent some of their aircraft to Kunda Airfield where they flew ground attack missions in support of the Imperial Japanese Army. Between 23 and 26 February, Kaga and Hōshō bombers attacked Chinese airfields at Hangzhou and Suzhou, destroying a number of Chinese aircraft on the ground. On 26 February, six fighters from Hōshō, escorting nine attack aircraft from Kaga on one of the bombing raids, shot down three of five Chinese fighters that engaged them. The First Carrier Division rejoined the Combined Fleet on 20 March, after a ceasefire had been declared on 3 March.
+                </h2>
+                <h1>FOURTH FLEET INCIDENT</h1>
+                <h2>Hōshō participated in the Combined Fleet Maneuvers of 1935 during which she was attached to the IJN Fourth Fleet. Caught in a typhoon on 23 September, the carrier and a number of other Japanese ships were badly damaged in what was referred to as the "Fourth Fleet incident." The ship's forward flight deck collapsed and part had to be cut away before the carrier could proceed to Yokosuka for repairs. The Fourth Fleet incident and the Tomozuru Incident of 1934, in which a top-heavy torpedo boat capsized in heavy weather, caused the Japanese command to investigate the stability of all their ships, resulting in a number of design changes to improve stability and increase hull strength.
+                </h2>
+            </div>
+            <div class="main2">
+                <h1>SINO-JAPANESE WAR</h1>
+                <h2>During the Sino-Japanese War, Hōshō rejoined the Third Fleet and supported land operations of the army in Central China in August 1937 with Ryūjō, later joined by Kaga. The three carriers carried a total of 90 aircraft to the conflict in China, including 15 from Hōshō, 27 on Ryūjō, and the rest with Kaga. Details of the activities of Hōshō's aircraft are scarce, but three of the ship's Nakajima A2N fighters shot down a Martin B-10 bomber on 25 July.
+                    <br>
+                    The carrier returned to Japan to refuel on 1 September and then sailed to the South China coast, accompanied by Ryūjō, and began operations against Chinese forces near Canton, now Guangzhou, on 21 September. That day, Hōshō contributed six fighters to escort bombers attacking airfields and the combined force encountered seven Curtiss Hawk III fighters, shooting down two, in addition to a pair of observation planes, for no combat losses of their own. Five of the Japanese fighters ran out of fuel during the return flight and had to ditch in the sea, although the aircrews were rescued. A followup air strike that afternoon was unsuccessfully attacked by the five remaining Hawks, at the cost of one of their own.
+                </h2>
+            </div>
+            <div class="img"></div>
+        </div>
+        <script>
+            function yourmom(name) {
+                document.getElementById(name).style.opacity = 1
+            }
+            function yourdad(name) {
+                document.getElementById(name).style.opacity = 0
+            }
+        </script>
+    </body>
+<html>

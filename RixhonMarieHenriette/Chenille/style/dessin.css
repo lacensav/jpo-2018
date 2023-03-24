@@ -1,0 +1,100 @@
+
+:root {
+    --toutaufond: 30vw;
+    --ph: 20vw;
+    --pph: 15vw;
+    --ppph: 10vw;
+    --corps: #fcbf49;
+    --corps2: #f77f00;
+    --corps3: #d62828;
+    --tete: #eae2b7;
+    --membre: #003049;
+    --blush: #d62828;
+    }
+
+body {
+    /*     background-image:linear-gradient(#88aa59, #50a2a7); */
+    background-image:linear-gradient(#78a639, #52c1c6);
+    background-size: cover;
+}
+
+.circle, .circle1, .circle2, .circle3, .circle4, .circle5, .circle6, .circle7, .circle8, .circle9, .circle10, .tete {
+    width: calc(100vw - 30%);
+    height: 70vw;
+    border-radius: 800px;
+}
+
+
+.tete {
+    margin-bottom: 35mm;
+    margin-right: 10mm;
+    background-color: var(--corps2);
+}
+
+.circle1, .circle3, .circle7, .circle10 {
+    margin-left: var(--ppph);
+    background-color: var(--corps);
+}
+
+.circle2, .circle5, .circle9 {
+    margin-left: var(--pph);
+    background-color: var(--corps2);
+}
+
+.circle6, .circle4, .circle8, .circle {
+    margin-left: var(--ph);
+    background-color: var(--corps3);
+}
+
+.bar {
+    margin-top: 33vw;
+    position: absolute;
+    z-index: +1;
+    width: 10vw;
+    height: 3vw;
+    background-color: var(--membre);
+}
+
+.oeil {
+    margin-top: -39%;
+    margin-left: 22vw;
+    position: absolute;
+    z-index: +1;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100vw;
+    background-color: #ffffff;
+}
+
+.oeilbis {
+    margin-top: -36%;
+    margin-left: 22vw;
+    position: absolute;
+    z-index: +1;
+    width: 10vw;
+    height: 13vw;
+    border-radius: 100vw;
+    background-color: var(--membre);
+}
+
+.pupille {
+    margin-top: -27%;
+    margin-left: 22vw;
+    position: absolute;
+    z-index: +1;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 10vw;
+    background-color: #ffffff;
+}
+
+.blush {
+    margin-top: -75vw;
+    position: absolute;
+    z-index: +1;
+    width: 31vw;
+    height: 31vw;
+    border-radius: 20vw;
+    background-color: var(--corps3);
+    margin-left: 21vw;
+}

@@ -1,0 +1,105 @@
+body{
+  background-image: url('https://c.tenor.com/1QE1cPvC-78AAAAC/glitter-stars.gif');
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+  margin:0;
+}
+@font-face {
+  font-family: "Snomelt";
+  src: url("Snomelt.ttf");
+}
+@font-face {
+  font-family: "Dinosaur";
+  src: url("Dinosaur.ttf");
+}
+@font-face {
+  font-family: "Love3";
+  src: url("Love3.ttf");
+}
+h1 {
+  font-family: 'Dinosaur';
+  font-size: 13.5vw;
+  color: #f28911;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60000, 0 0 40px #e60073, 0 0 50px #ff450d, 0 0 60px #ffeebf, 0 0 70px #e60073;
+ }
+  to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+ }
+}
+h2{
+  font-family: 'Love3';
+  font-size: 7vw;
+  color: #ffc2c2;
+}
+h3{
+  font-family: 'Love3';
+  font-size: 3vw;
+  color: #ff6464;
+}
+.references {
+  font-family: 'Love3';
+  color: aliceblue;
+  animation: rotation 2s infinite linear;
+}
+.rainbowText {
+  font-family: 'Love3';
+  font-size: 10vw;
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: move 35s linear infinite;
+}
+.liens {
+  filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+  width:33%;
+  height:33%;
+  float: left;
+  text-align: center;
+ /* center images */
+  vertical-align: middle;
+}
+.galleryimage {
+  width:100%;
+  height: 100%;
+}
+/* Glow des gifs */
+.Fricadelle1 {
+  filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+  width:100%;
+  height:50%;
+}
+.Fricadelle2 {
+  filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+}
+.Fricadelle3 {
+  filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+  width:33%%;
+  height:33%;
+}
+.Fricadelle4 {
+  filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+  width:33%%;
+  height:33%;
+}
+.overlay1 {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index:-1;
+}
+p{
+  font-family: 'Love3';
+  color: aliceblue;
+  animation: rotation 2s infinite linear;
+}

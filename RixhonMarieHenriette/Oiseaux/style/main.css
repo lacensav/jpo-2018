@@ -1,0 +1,296 @@
+:root {
+
+    --CO: #ee9b00;
+    --fond: #e9d8a6;
+    --aile: #FFA704;
+    --Noir: #070a17;
+    --blanc: #bec4db;
+    --bec: #bb3e03;
+    --aileombre: #8160f647;
+    --eau: #0a9396;
+    --reflet: #94d2bd8f;
+    --outline: #e1aa44bd;
+    --buisson: #007f5f;
+    }
+@font-face {
+    font-family: "PicNic-Regular";
+    src: url(../webfonts/PicNic-Regular.woff);
+}
+@keyframes avancer {
+    0% { transform: translate(0vw, 0vh);}
+    25% { transform: translate(25vw, 2vh);}
+    50% { transform: translate(50vw, 0vh);}
+    75% { transform: translate(75vw, 3vh);}
+    100% { transform: translate(100vw, 1vh);}
+}
+
+/*
+@keyframes plantes {
+    0% { transform: translate(100%, 10%);}
+    100% { transform: translate(-300%, 0%);}
+    
+}
+
+@keyframes test {
+    0% { transform: matrix(10,20,30,40,50,10);}
+    100% { transform: matrix(10,20,30,40,50,10);}
+}
+
+@keyframes ailebec {
+    0% {transform: translate(0px, 0px);
+        transform: rotate(0 deg);}
+    25% { transform: translate(200px, 20px);
+        transform: rotate(10 deg);}
+    50% { transform: translate(300px, 0px);
+        transform: rotate(0 deg);}
+    75% { transform: translate(400px, 30px);
+        transform: rotate(10 deg);}
+    100% { transform: translate(500px, 10px);
+        transform: rotate(0 deg);}
+    
+}
+
+.aile2, .bec2 {
+   animation: ailebec 10s;
+   animation-iteration-count: infinite;
+}
+*/
+
+.buisson {
+    position: relative;
+    z-index: -4;
+    margin-bottom: -273px;
+    margin-left: -60px;
+}
+
+.buisson2 {
+    position: relative;
+    z-index: -4;
+    margin-bottom: -310px;
+    margin-left: 500px;
+}
+
+.buisson3 {
+    position: relative;
+    z-index: -4;
+    margin-bottom: -273px;
+    margin-left: 1010px;
+}
+
+.buisson, .buisson2, .buisson3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background-color: var(--buisson);
+}
+
+.oeilb, .oeil, .tete, .corps, .aile, .aileombre, .aileombre2, .bec, .aile2, .bec2  {
+    animation: avancer 10s;
+    animation-iteration-count: infinite;
+}
+
+body {
+    background-color: var(--fond);
+    font-family: 'Courier New', Courier, monospace;
+    object-fit: cover;
+    font-family: PicNic-Regular;
+}
+
+p {
+    margin-top: 10px;
+    color: var(--eau);
+    font-family: PicNic-Regular;
+    font-size: 25pt;
+}
+.oeilb {
+    width: 25px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: var(--blanc);
+    margin-left: 86mm;
+    margin-top: 12mm;
+    position: absolute;
+    z-index: +2;
+}
+
+.oeil {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: var(--Noir);
+    margin-left: 78mm;
+    margin-top: 10mm;
+    position: absolute;
+    z-index: +1;
+}
+
+.tete {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: var(--CO);
+    margin-left: 60mm;
+}
+
+.corps {
+    width: 240px;
+    height: 170px;
+    border-radius: 100px;
+    background-color: var(--CO);
+    padding-left: 63px;
+    margin-left: 14mm;
+    margin-top: -9mm;
+    position: absolute;
+    z-index: -1;
+}
+
+.aile, .aile2 {
+    width: 195px;
+    height: 68px;
+    border-radius: 100px;
+    background-color: var(--aile);
+    border-bottom:  1px solid var(--outline);
+}
+
+.aile {
+    margin-left: 27mm;
+}
+
+.aile2 {
+    margin-top: -53px;
+    margin-left: 24mm;
+}
+
+.aileombre, .aileombre2 {
+    width: 195px;
+    height: 68px;
+    border-radius: 100px;
+    background-color: var(--aileombre);
+}
+
+.aileombre {
+    margin-left: 28mm;
+    margin-top: -21mm;
+    position: absolute;
+    z-index: -1;
+}
+
+.aileombre2 {
+    margin-left: 24mm;
+    margin-top: -15mm;
+    position: absolute;
+    z-index: -1;
+}
+.bec, .bec2 {
+    width: 72px;
+    height: 26px;
+    border-radius: 100px;
+    background-color: var(--bec);
+    margin-left: 90mm;
+    position: absolute;
+    z-index: -2;
+}
+
+.bec {
+    margin-top: -43mm;
+}
+
+.bec2 {
+    margin-top: -40mm;
+}
+
+.eau {
+    width: 120%;
+    height: 60vh;
+    background-color: var(--eau);
+    position: absolute;
+    z-index: -3;
+    margin-left: -10%;
+}
+
+.reflet {
+    width: 120%;
+    height: 60vh;
+    background-color: var(--reflet);
+    margin-left: -10%;
+    position: absolute;
+    z-index: 3;
+}
+
+.nénuphar, .nénuphar2, .nénuphar3, .nénuphar4, .nénuphar5, .nénuphar6 {
+    width: 90px;
+    height: 70px;
+    border-radius: 100px;
+    background-color: var(--buisson);
+}
+
+.nénuphar {
+    margin-top: 20%;
+    margin-left: 10%;
+    position: absolute;
+    z-index: 4;
+}
+
+.nénuphar2 {
+    margin-top: 5%;
+    margin-left: 20%;
+    position: absolute;
+    z-index: 4;
+}
+
+.nénuphar3 {
+    margin-top: 7%;
+    margin-left: 70%;
+    position: absolute;
+    z-index: 4;
+}
+
+.nénuphar4 {
+    margin-top: 15%;
+    margin-left: 45%;
+    position: absolute;
+    z-index: 4;
+}
+
+.nénuphar5 {
+    margin-top: 20%;
+    margin-left: 60%;
+    position: absolute;
+    z-index: 4;
+}
+
+.nénuphar6 {
+    margin-top: 13%;
+    margin-left: 90%;
+    position: absolute;
+    z-index: 4;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+      background-color: red;
+    }
+    .eau {
+        height: 2000vw;
+        width: 120%;
+        height: 50vw;
+        margin-left: -10%;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+
+    .eau {
+    width: 120%;
+    height: 50vw;
+    margin-left: -10%;
+    height: 1100vw;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+
+  .nénuphar, .nénuphar3, .nénuphar6 {
+    visibility: hidden;
+  }
+  }

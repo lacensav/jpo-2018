@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "Pilowlava-Regular";
+    src: url(../Typo/Pilowlava-Regular.woff);
+  }
+
+@keyframes changeC {
+    0% {background-color: black;}
+    50% {background-color: white;}
+    100% {background-color: black;}
+  }
+
+body {
+  background-color: black;
+    color: var(--flash);
+    font-family: "Pilowlava-Regular";
+    font-size: 150pt;
+ }
+
+.dropdown {
+  display: none;
+}
+ .Bloc {
+    width: 100%;
+    height: 240pt;
+    background-color: white; 
+    margin-top: 0mm;
+    z-index: -1;
+ }
+
+ .Bloc2 {
+    width: 100%;
+    height: 400pt;
+    margin-top: 0mm;
+    padding-top: 0mm;
+    padding-bottom: 5mm;
+    color: white;
+ }
+
+ /*
+ .Bloc2:hover {
+  animation-timing-function: forwards;
+  animation: changeC 20s;
+  animation-iteration-count: infinite;
+ } */
+
+ .Black {
+    color: black;
+ }
+
+ .White {
+    color: white;
+ }
+
+ table, th, td {
+  border: 1px solid;
+    font-size: 15pt;
+text-align: center;
+ }
+
+ table {
+  width: 100%;
+ }
+
+ ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 20;
+    background-color: black;
+  }
+
+ li {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20vh;
+  }
+  
+  a {
+    color: white;
+    text-align: center;
+    padding: 20;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    color: var(--flash)
+  }
+  
+  p a {
+    color: white;
+  }
+
+  p a:hover {
+    color: var(--flash);
+  }
+
+  .FirstClass {
+    color: white;
+    max-width: 355mm;
+    font-size: 25pt;
+    margin-top: 0px;
+    margin-bottom: 5mm;
+    margin-left: 10mm;
+  }
+
+  a:hover {
+    cursor: help;
+  }
+
+  .SecondClass {
+    color: white;
+    max-width: 300mm;
+    font-size: 20pt;
+    margin-top: 0px;
+    margin-bottom: 5mm;
+    margin-left: 20mm;
+  }
+  
+  .ThirdClass {
+    color: white;
+    max-width: 260mm;
+    font-size: 15pt;
+    margin-top: 0px;
+    margin-bottom: 5mm;
+    margin-left: 30mm;
+  }
+  
+  blockquote {
+    background: white;
+    border-radius: 5px;
+    margin: 16px 0;
+}
+
+blockquote p {
+  font-size: 150pt;
+    padding: 15px;
+    margin-bottom: 10mm;
+    margin-top: 25mm;
+}
+
+@media screen and (max-width: 900px) { 
+
+  table, th, td {
+    display: none;
+  }
+
+  .dropdown {
+    display: inline;
+    margin-top: 2pt;
+  }
+
+.dropbtn {
+  font-family: "Pilowlava-Regular";
+  background-color: #05080F;
+  color: white;
+  padding: 16px;
+  font-size: 150pt;
+  border: none;
+  cursor: pointer;
+  width: 100vw;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+  width: 100vw;
+  font-size: 25pt;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #000000;
+  color: #FFFFFF;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+
+.dropdown, .dropbtn, .dropdown-content {
+  font-family: "Pilowlava-Regular";
+}
+
+}

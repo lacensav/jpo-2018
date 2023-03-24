@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Baskervville-Regular";
+  src: url(../Typo/Baskervville-Regular.woff);
+}
+
+h5 {
+  width: 350px;
+  padding: 5px;
+  margin: 20px;
+  background-color: rgba(0, 64, 103, 0.592);
+  animation-name: example;
+  animation-duration: 30s;
+}
+
+@keyframes example {
+  from {background-color: rgba(0, 64, 103, 0.592)}
+  to {background-color: rgb(55, 123, 37);}
+}
+
+
+body {
+  background-image: linear-gradient(rgb(225, 214, 198), rgba(56, 123, 37, 0.515));
+  background-repeat: no-repeat;
+  font-family: "Baskervville-Regular";
+  
+}
+
+h1, h2 {
+  font-family: "Baskervville-Regular";
+}
+
+ul {
+    margin-top: 0mm;
+    margin-bottom: 0mm;
+    margin-right: 30mm;
+    margin-left: 30mm;
+}
+
+h1 {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+    color: rgb(0, 64, 103);
+    border-bottom-style: solid;
+    margin-top: 10mm;
+    margin-bottom: 5mm;
+    margin-right: 30mm;
+    margin-left: 30mm;
+    
+}
+
+
+  a:link {color:rgb(0, 64, 103);text-decoration:none;}
+  a:visited {color:rgb(55, 123, 37);text-decoration:none;}
+  a:hover {color:rgb(103, 0, 0);text-decoration:underline;}
+
+#Titre {
+  margin-top: 5mm;
+   margin-bottom: 0mm;
+   margin-right: 0mm;
+   margin-left: 30mm;
+}
+#Collins {
+  color: beige;
+}
+
+nav a:hover {
+  text-transform: uppercase;
+  cursor: wait;
+}
+
+nav li{
+  display: inline;
+  /*display: "block" prend toute la ligne */
+}
+
+li a:visited {
+  color: brown;
+}
+
+/* On peut changer la position de l'image */
+img {
+  position: static;
+}
+h5 {
+  background-color: rgba(0, 64, 103, 0.592);
+  width: 350px;
+  padding: 5px;
+  margin: 20px;
+
+  color: beige;
+
+   margin-top: 5mm;
+   margin-bottom: 0mm;
+   margin-right: 30mm;
+   margin-left: 30mm;
+ }
+p ul {
+  color: rgb(61, 51, 10);
+  margin-top: 10mm;
+  margin-bottom: 10mm;
+  margin-right: 30mm;
+  margin-left: 30mm;
+
+}
+
+p {
+    color: rgb(61, 51, 10);
+    margin-top: 10mm;
+    margin-bottom: 10mm;
+    margin-right: 30mm;
+    margin-left: 30mm;
+
+}
+
+h2, h3 {
+  color: rgb(0, 64, 103);
+    margin-top: 10mm;
+    margin-bottom: 10mm;
+    margin-right: 30mm;
+    margin-left: 30mm;
+}
+
+
+img {
+    width: 10cm;
+    margin-top: 0mm;
+    margin-bottom: 0mm;
+    margin-right: 30mm;
+    margin-left: 30mm;
+
+    /*ne fonctionne pas */
+    opacity: var(10mm);
+}
+
+

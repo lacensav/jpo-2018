@@ -1,0 +1,237 @@
+h1{
+    color: rgb(16, 0, 0);
+    font-size: 1200%;
+    text-transform:uppercase;
+    font-weight:200;
+    font-family: 'Segoe UI','Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align:center;
+    margin-right: 5%;
+    animation-name: blink;
+    margin-top: -1cm;
+    animation-duration: 3s;
+    margin-bottom: 1cm;
+    text-decoration: underline;
+    text-decoration-color: rgb(229, 215, 196);
+    text-decoration-style:dotted;
+}
+
+@keyframes blink {
+    from {
+       color: transparent;
+      }
+    
+      to {
+        color: rgb(16, 0, 0);
+      }
+}
+
+p{
+    animation-duration: 5s;
+    animation-name: blink;
+}
+p{
+    color: rgb(16, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva sans-serif;
+    font-size:large;
+    font-weight:300;
+    text-align : left;
+    margin: auto;
+    margin-block: 1cm;
+    margin-top: 0%;
+    margin-right: 7cm;
+    margin-left: 25%;
+
+}
+
+h2 { color: rgb(16, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 1cm;
+    margin-top: 0%;
+    margin-left: 25%;
+    font-weight: 350;
+    text-transform:uppercase;
+    text-decoration: underline;
+    text-decoration-color: rgb(229, 215, 196);
+}
+
+h3 {color: rgb(16, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 2cm;
+    margin-top: 5%;
+    margin-left: 25%;
+    font-weight: 350;
+    text-transform:uppercase;
+    text-decoration: underline;
+    text-decoration-color: rgb(229, 215, 196);}
+
+figure {
+    display:block;
+    padding: 1cm;
+    max-width: 220px;
+    float: left;
+}
+
+img {
+    max-width: 220px;
+    max-height: 300px;
+}
+
+figcaption {
+    background-color:  rgb(229, 215, 196);
+    color:rgb(79, 40, 40);
+    font-family: 'Segoe UI', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 3px;
+    font-weight: 300;
+    font-size: larger;
+    text-align:center;
+}
+
+
+ul{
+    color: rgb(23, 0, 0);
+    font-family:'Segoe UI', Verdana,'Courier New', Courier, monospace;
+    text-align : left;
+    font-size:smaller;
+    font-weight:300;
+    margin-block-end: 2cm;
+    margin-left: 60%;
+    line-height: 150%;
+    list-style:circle;
+    margin-top: -2.5cm;
+    
+}
+
+.poeme{
+    color: rgb(16, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva sans-serif;
+    font-size:large;
+    font-weight:300;
+    text-align : left;
+    margin: auto;
+    margin-block:14px;
+    margin-top: 0%;
+    margin-right: 7cm;
+    margin-left: 25%;
+}
+
+.note{
+    margin-right: 15cm;
+}
+
+.liste{
+    color: rgb(23, 0, 0);
+    font-family:'Segoe UI', Verdana,'Courier New', Courier, monospace;
+    text-align : left;
+    font-size:smaller;
+    font-weight:300;
+    list-style:circle;
+    margin-block-start: 10cm;
+    margin: 2cm;
+    line-height: 150%;
+    padding-left: 20%;
+}
+
+.accueil{
+    color: rgb(23, 0, 0);
+    font-family:'Segoe UI', Verdana,'Courier New', Courier, monospace;
+    text-align : left;
+    font-size:smaller;
+    font-weight:300;
+    list-style:circle;
+    margin-block-start: 10cm;
+    margin: 2cm;
+    line-height: 150%;
+    float: left;
+}
+
+.Buse{
+    color: rgb(16, 0, 0);
+    font-size: 1000%;
+    text-transform:uppercase;
+    font-weight:200;
+    font-family: 'Segoe UI','Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align:center;
+    margin-right: 5%;
+    animation-name: blink;
+    margin-top: 0cm;
+    animation-duration: 3s;
+    margin-bottom: 1cm;
+    text-decoration: underline;
+    text-decoration-color: rgb(229, 215, 196);
+    text-decoration-style:dotted;
+}
+
+nav {
+    position: fixed;
+    left: -70px;
+    padding: 5px;
+    font-size: 150%;
+
+}
+
+nav li { 
+    display:inline;
+    
+}
+
+nav li a:hover{
+    color: rgb(118, 71, 33);
+    text-transform: uppercase;
+    cursor:zoom-in;
+    font-weight: bold;
+}
+
+a{
+    text-decoration:none;
+    margin-right: 10px;
+    color:rgb(203, 134, 73);
+}
+
+a:hover{
+    color: rgb(118, 71, 33);
+    cursor:zoom-in;
+    font-weight: bold;
+}
+
+.nav2{
+    position: fixed;
+    right: -700px;
+    top: 150px;
+    padding: 1px;
+    font-size: 150%;
+}
+
+.nav2 li{
+    display:list-item;
+    text-align: left;
+    font-size: 14px;
+}
+
+figure img:hover{
+   cursor: grab;
+}
+
+#surprise {
+    max-width: 60px;
+    margin-top: 120px;
+    margin-left: 130px;
+    width: 10cm;
+    float: right;
+   opacity: 20%;
+   position:fixed;
+
+}
+
+
+#surprise:hover{
+    opacity: 100%;
+    max-width: 80px;
+}
+
+span{
+    font-weight: bold;
+}

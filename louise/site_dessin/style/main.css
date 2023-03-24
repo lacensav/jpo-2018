@@ -1,0 +1,414 @@
+@keyframes soleil {
+    0%{
+        margin-top: 100%;
+        opacity: 0%;
+    }
+ 
+    50%{
+        opacity: 0% ;
+    }
+
+    100%{
+        margin-top: 5%;
+        opacity: 100% ;
+    }
+    }
+
+    @keyframes brillant {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+          transform: scale(3);
+        }
+        100%{
+          transform: scale(0);
+        }
+        }
+    
+
+   
+  @keyframes nuage {
+    0% {
+      transform: translate3d(0,0,0);      /* position initiale à droite */
+    }
+    100% {
+      transform: translate3d(-10em,0,0);  /* position finale à gauche */
+    }
+  }
+    
+
+    @keyframes honse {
+        0%{
+            margin-left: 0;
+            transform: scale(1);
+        }
+        100%{
+            margin-left: 100vw;
+            margin-top: 80vh;
+            transform: scale(2);
+        }
+        }
+
+
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+    body{
+background-image: repeating-radial-gradient(circle at bottom center, rgb(255, 144, 144), rgb(255, 240, 154), rgb(199, 92, 185)100%);
+min-height: 100vh;
+overflow-x: hidden;
+overflow-y: hidden;
+    }
+    
+    .carre{
+        width: 400px;
+        height: 400px;
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(to top right, orange, green) ;
+        text-align: center;
+        transition-delay: 2s;
+    }
+    
+    .fences{
+        font-size: 100px;
+        font-weight: 900;
+        text-align: center;
+        position: fixed;
+        margin-top: 3.8em;
+        margin-left: 7.2em;
+       color: rgb(129, 193, 201);
+       z-index:1;
+
+    }
+    .herbs{
+        font-size: 100px;
+        text-align: center;
+        position: fixed;
+        margin-top: 5em;
+        margin-left: 2.5em;
+       color: rgb(129, 193, 201);
+       z-index:1;
+       transform: rotate(20deg);
+
+    }
+    .herbs2{
+        font-size: 100px;
+        text-align: center;
+        position: fixed;
+        margin-top: 5em;
+        margin-left: 15em;
+       color: rgb(129, 193, 201);
+       z-index:1;
+       transform: rotate(20deg);
+
+    }
+    .herbs3{
+        font-size: 100px;
+        text-align: center;
+        position: fixed;
+        margin-top: 3.5em;
+        margin-left:5em;
+       color: rgb(79, 142, 150);
+       z-index:1;
+       transform: rotate(20deg);
+
+    }
+    .herbs4{
+        font-size: 100px;
+        text-align: center;
+        position: fixed;
+        margin-top: 3.5em;
+        margin-left:11.5em;
+       color: rgb(79, 142, 150);
+       z-index:1;
+       transform: rotate(20deg);
+
+    }
+
+    .herbs4:hover{
+        animation: shake 1s infinite;
+        rotate: 20deg;
+    }
+    .herbs:hover{
+        animation: shake 1s infinite;
+        rotate: 20deg;
+    }
+    .herbs2:hover{
+        animation: shake 1s infinite;
+        rotate: 20deg;
+    }
+    .herbs3:hover{
+        animation: shake 1s infinite;
+        rotate: 20deg;
+    }
+    .carre:hover{
+        width:600px;
+        transition: width 2s, margin-left 10s;
+        margin-left: 400px;
+    }
+    
+    
+    .cercle1{
+        width: 50rem;
+        height: 50rem;
+        color: rgb(149, 255, 0);
+        border-radius: 25rem;
+        margin-right: -8rem;
+        margin-left: -8rem;
+        background-image: radial-gradient(ellipse at bottom left, rgb(142, 210, 143), rgb(12, 160, 128), rgb(210, 117, 178));
+        z-index:2;
+    }
+
+    .cercle1:hover{
+        transform: scale(1.03);
+    }
+
+    .cercle2{
+        width: 500px;
+        height: 500px;
+        color: rgb(149, 255, 0);
+        border-radius: 250px;
+        background-image: linear-gradient( rgb(154, 193, 167),rgb(2, 164, 162), rgb(37, 0, 77));
+        margin-bottom: -67rem;
+        margin-right: -7rem;
+        margin-left: 14rem;
+    
+    }
+
+    .cercles3{
+        width: 20px;
+        height: 20px;
+        color: rgb(149, 255, 0);
+        border-radius: 10px;
+        background-image: linear-gradient( rgb(104, 45, 140),rgb(190, 135, 168), rgb(224, 195, 255));
+        margin-bottom: -40rem;
+        margin-right: 8rem;
+        margin-left: 6rem;
+        margin-top: -70rem;
+        z-index:2;
+    }
+
+
+    .twer{
+       /* width: 20px;
+        height: 10rem;*/
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 10rem 10rem;
+        border-color: transparent transparent rgb(104, 45, 140) transparent;
+        border-radius: 100px;
+        background-image: linear-gradient( rgb(104, 45, 140),rgb(190, 135, 168), rgb(224, 195, 255));
+        margin-bottom: -8em;
+        margin-right: 8rem;
+        margin-left: 44rem;
+        margin-top: -18rem;
+        z-index:1;
+        position: relative;
+        
+    }
+
+    .twer:hover{
+       transform: scale(1.1);
+       animation:shake 2s alternate-reverse infinite;
+    }
+    .triangles{
+    
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 160px 40px;
+        border-radius: 40px;
+        border-color: transparent transparent rgb(28, 121, 136) transparent;
+        margin-bottom: -23rem;
+        margin-right: 6.2rem;
+        margin-left: 4.1rem;
+        margin-top: -98rem;
+        z-index:3;
+        display: inline-flex;
+      
+    }
+
+    .triangles:hover{
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+        transform: scale(2);
+    }
+
+    #soleil{
+        width: 5rem;
+        height: 5rem;
+        color: rgb(149, 255, 0);
+        border-radius: 2.5rem;
+        background-color: khaki;
+        margin-left: 10rem;
+        margin-top: 5rem;
+        animation: soleil 4s;
+        position: fixed;
+        animation-direction: alternate-reverse;
+       animation-iteration-count: infinite;
+    }
+
+    #soleil:hover{
+        animation: brillant 1s infinite;
+    }
+    #soleil2{
+        width: 5rem;
+        height: 5rem;
+        color: rgb(149, 255, 0);
+        border-radius: 2.5rem;
+        background-color: transparent;
+        margin-left: 10rem;
+        margin-top: 5rem;
+    }
+    #nuage1{
+        width: 20rem;
+        height: 4rem;
+        color: rgb(149, 255, 0);
+        border-radius: 2.5rem;
+        background-color:rgb(201, 231, 239);
+        margin-left: 80rem;
+        margin-top: 5rem;
+        margin-bottom: -15rem;
+        animation: nuage 5s ;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+
+    #nuage2{
+        width: 10rem;
+        height: 4rem;
+        color: rgb(149, 255, 0);
+        border-radius: 2.5rem;
+        background-color:rgb(201, 231, 239);
+        margin-left: 85rem;
+        margin-top: 8rem;
+        margin-bottom: -6rem;
+        animation: nuage 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+
+    #tower{
+        width: 10rem;
+        height: 28rem;
+        color: rgb(149, 255, 0);
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        background-image: repeating-linear-gradient( rgb(201, 231, 239), rgb(223, 172, 255),rgb(255, 144, 144), rgb(122, 66, 167)100%);
+        margin-left: 49rem;
+        margin-top: 2rem;
+        margin-bottom: -32rem;
+        z-index:1;
+        position: relative;
+    }
+
+    
+    #tower2{
+        width: 3rem;
+        height: 10rem;
+        color: rgb(149, 255, 0);
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        background-image: repeating-linear-gradient( rgb(201, 231, 239), rgb(223, 172, 255),rgb(255, 144, 144), rgb(122, 66, 167)100%);
+        margin-left: 50rem;
+        margin-top: 5rem;
+        margin-bottom: -12rem;
+        z-index:1;
+        position: relative;
+    }
+
+    #tower2:hover{
+        background-image: url(../nature-852927__340.jpg);
+        background-size: 7rem 7rem;
+        background-position: center;
+    }
+    #tower3{
+        width: 2rem;
+        height: 9rem;
+        color: rgb(149, 255, 0);
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        background-image: repeating-linear-gradient(  rgb(223, 172, 255),rgb(255, 144, 144), rgb(122, 66, 167)100%);
+        margin-left: 53rem;
+        margin-top: 20rem;
+        margin-bottom: -10rem;
+        z-index:1;
+        position: fixed;
+    }
+
+    #tower3:hover{
+        
+        background-image: repeating-linear-gradient( rgb(122, 66, 167),rgb(122, 66, 167)100%);
+    }
+    .triangle{
+        width: 40rem;
+        height: 50rem;
+        background-image: repeating-radial-gradient(ellipse at bottom left, rgb(255, 0, 43), rgb(140, 255, 0), rgb(0, 38, 255) 100px);
+        border-right-color: brown;
+        border-left-color: blueviolet;
+        border-bottom-color: aquamarine;
+    
+        transform:skew(20deg);
+    }
+    
+    h1{
+        font-size:165px;
+        background:transparent;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        background-image: linear-gradient(pink, red,green);
+        animation: honse 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-fill-mode: forwards;
+    }
+    
+    img{
+        animation: honse 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+
+li{
+display: inline-flex;
+background: none;
+margin: -130px;
+margin-top: 20rem;
+padding-bottom: 20rem;
+}
+
+div li{
+    position: fixed;
+}
+
+
+div li .cercles3{
+
+    display: inline-flex;
+    background: none;
+    margin: -130px;
+    margin-top: 20rem;
+    padding-bottom: 20rem;
+}

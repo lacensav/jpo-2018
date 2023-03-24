@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Pilowlava-Regular";
+    src: url(../Typo/Pilowlava-Regular.woff);
+  }
+
+body {
+    background-color: black;
+    font-family: "Pilowlava-Regular";
+    color: white;
+}
+
+.ElementA, .ElementB, .ElementC, .ElementD {
+    position: absolute;
+    margin-left: 60vw;
+    margin-right: 50mm;
+    margin-top: 50mm;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0);
+    margin-left: 0mm;
+}
+
+nav li {
+    margin-bottom: 2mm;
+    display: inline;
+}
+
+nav li:hover {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    width: 70%;
+    height: 70%;
+ }
+
+
+ .Img2, .Img3, .Img4, .Img5 {
+    width: 40%;
+    height: 40%;
+    margin-left: 60mm;
+    margin-top: 0mm;
+ }
+
+ 
+@media screen and (max-width: 1200px) { 
+
+    /* Le titre passe à la ligne */
+nav li { 
+    display: inline;
+    font-size: 10pt;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    margin: 0px;
+    padding: 0px;
+}
+
+    .Img1, .Img2, .Img3, .Img4, .Img5 {
+        width: 40%;
+        height: 40%;
+        margin-left: 10%;
+        margin-top: 3%;
+     }
+
+     .ElementA {
+        position: absolute;
+        margin-left: 44%;
+        margin-top: 10%;
+        margin-right: 3%;
+    }
+
+    .ElementB, .ElementC {
+        margin-left: 52%;
+        position: absolute;
+        margin-right: 3%;
+        margin-top: 0%;
+    }
+
+    .ElementD {
+        margin-left: 52%;
+        position: absolute;
+        margin-right: 3%;
+        margin-top: 2%;
+    }
+    
+    nav {
+        position: absolute;
+    }
+
+@media screen and (max-width: 900px) { 
+.Img2, .H {
+    display: none;
+} 
+}
+/*
+@media screen and (max-width: 760px) { 
+    .dropdown1 {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content1 {
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        min-width: 100vw;
+        padding: 2vh;
+        min-height: 20vh;
+        z-index: 1;
+      }
+      
+      .dropdown1:hover .dropdown-content1 {
+        display: block;
+      }
+      
+      .desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      .ElementA {
+        display: none;
+      }
+    }
+*/
+}

@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Redaction_50-Bold";
+    src: url(../typo/Redaction_50-Bold.woff2) format(woff2);
+
+    font-family: "Redaction_50-Bold";
+    src: url(../typo/webfonts/Redaction_50-Bold.woff2) format(woff2);
+
+    font-family: "ocr-a";
+    src: url(../typo/ocr-a.otf) format(otf);
+
+    font-family: "sysfont";
+    src: url(../typo/sysfont.woff2) format(woff2);
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+:root {
+--couleur-lettres: #0C0A09
+    }
+
+body {
+    font-family: "sysfont";
+
+    text-align: center;
+    /* 
+        font-family: "Redaction_50-Bold";
+    background-image: url("../image/fond.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    */
+
+    background-color: #19a2e6;
+}
+
+.grid-container {
+    margin-top: 7vh;
+    display: grid;
+    padding: 1px;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr); 
+    
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+.grid-container1 {
+    width: 106vw;
+    margin-left: -3vw;
+    margin-top: -3vh;
+    display: grid;
+    padding: 1px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;  
+}
+.grid-item {
+    background-color: rgba(168, 168, 168, 0);
+    padding: 0px;
+    text-align: center;
+  }
+
+.item1, .item2, .item3 {
+    background-color: rgb(210, 208, 208);
+    border: 3px solid rgba(200, 200, 200, 0.981);
+    padding-top: 2vh;
+  }
+
+.item3 {
+    padding-right: 3vw;
+}
+.item2 {
+    grid-column: 2 / 6;
+}
+
+.Icon {
+    width: 7vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    background-color: black;
+}
+
+.Corbeille {
+ margin-top: -1vh;
+ width: 7vw;
+ cursor: help;
+}
+
+.Corbeille:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+.Bas {
+    width: 7vw;
+    margin-top: 5%;
+}
+
+div{
+    cursor: pointer;
+}

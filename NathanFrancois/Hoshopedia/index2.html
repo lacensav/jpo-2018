@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <link rel="icon" href="ptitlogo.ico" type="image/x-icon">
+        <meta charset="utf-8">
+        <title>Aircraft Carrier Hōshō</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            top: 0;
+            box-sizing: border-box;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        @font-face {
+            font-family: 'Roobert';
+            src: url('RoobertRegular.woff') format('woff')
+        }   
+        ::selection {
+            background: rgba(0, 0, 0); /* WebKit/Blink Browsers */
+            color: white;
+        }
+        ::-moz-selection {
+            background: rgba(0, 0, 0); /* Gecko Browsers */
+            color: white;
+        }
+        h1 {
+            font-size: 1rem;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin: 2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            font-weight: 1;
+        }
+        h2 {
+            font-size: 0.7rem;
+            font-family: Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            font-weight: 1;
+        }
+        .grid-container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4 , 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            padding: auto;
+            text-align: center;
+        }
+        .grid-container div {
+            z-index: 99;
+        }
+        .it {
+            display: flex;
+            vertical-align: auto;
+        }
+        #item1 { 
+            grid-area: 1922;
+            grid-column: 1;
+            grid-row: 1;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #item2 { 
+            grid-area: 1924;
+            grid-column: 1;
+            grid-row: 2;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #item3 { 
+            grid-area: 1936;
+            grid-column: 1;
+            grid-row: 3;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #item4 { 
+            grid-area: 1944; 
+            grid-column: 1;
+            grid-row: 4;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #item5 {
+            grid-area: 1945;
+            grid-column: 1;
+            grid-row: 5;
+            border-right: 1px solid black;
+        }
+        .absolute-container {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            grid-template-columns: repeat(4 , 1fr);
+            grid-template-rows: repeat(5, 1fr);
+        }
+        .absolute-container div{
+            opacity: 0%;
+        }
+        #txt1922 {
+            grid-column: 1;
+            grid-row: 1;
+            transform: translateY(-0.85vh);
+        }
+        #txt1924 {
+            grid-column: 1;
+            grid-row: 2;
+            transform: translateY(-0.85vh);
+            opacity: 100%;
+        }
+        #item2:hover {
+            cursor: not-allowed;
+        }
+        #txt1936 {
+            grid-column: 1;
+            grid-row: 3;
+            transform: translateY(-0.85vh);
+        }
+        #txt1944 {
+            grid-column: 1;
+            grid-row: 4;
+            transform: translateY(-0.85vh);
+        }
+        #txt1945 {
+            grid-column: 1;
+            grid-row: 5;
+            transform: translateY(-0.85vh);
+        }
+        .it:hover {
+            cursor: pointer;
+        }
+        .main {
+            grid-area: main;
+            grid-column: 2 / 5;
+            grid-row: 1 / 5; 
+            text-align: left;
+        }
+        .main2 {
+            grid-area: main2;
+            grid-column: 2 / 3;
+            grid-row: 3 / 6; 
+            text-align: left;
+            border-top: 1px solid black;
+            transform: translateY(-1px);
+            background-color: white;
+        }
+        .img {
+            grid-area: img;
+            grid-column: 3 / 5;
+            grid-row: 3 / 6;
+            background-image: url(img1924.jpg);
+            border-left: 1px solid black;
+            border-top: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+            transform: translateY(-1px);
+        }
+
+    </style></head>
+
+    <body>
+        <img style="z-index: 199; position: absolute; margin: 1.5rem; margin-top: 0; width: 4vw;" src="logo.svg">
+        <div class="absolute-container">
+            <div id="txt1922" class="it"><img src="1922txt.svg"></div>
+            <div id="txt1924" class="it"><img src="1924txt.svg"></div>
+            <div id="txt1936" class="it"><img src="1936txt.svg"></div>
+            <div id="txt1944" class="it"><img src="1944txt.svg"></div>
+            <div id="txt1945" class="it"><img src="1945txt.svg"></div>
+        </div>
+        <div class="grid-container">
+            <div id="item1" class="it" onmouseenter="yourmom('txt1922')" onmouseleave="yourdad('txt1922')" onclick='location.href="index.html"'><img src="1922.svg"></div>
+            <div id="item2" class="it"><img src="1924.svg"></div>
+            <div id="item3" class="it" onmouseenter="yourmom('txt1936')" onmouseleave="yourdad('txt1936')" onclick='location.href="index3.html"'><img src="1936.svg"></div>
+            <div id="item4" class="it" onmouseenter="yourmom('txt1944')" onmouseleave="yourdad('txt1944')" onclick='location.href="index4.html"'><img src="1944.svg"></div>
+            <div id="item5" class="it" onmouseenter="yourmom('txt1945')" onmouseleave="yourdad('txt1945')" onclick='location.href="index5.html"'><img src="1945.svg"></div>
+            <!--it's ugly but it works-->  
+            <div class="main">
+                <h1>AIR GROUP</h1>
+                <h2>Hōshō's flight deck was 168.25 meters (552 ft) long and 22.62 meters (74 ft 3 in) wide. The forward end sloped down at an angle of −5° to help aircraft accelerate during takeoff. A small island was mounted well forward on the starboard side and contained the ship's bridge and air-operations control center. The island was fitted with a small tripod mast intended to carry the ship's fire-control system. Fifteen different types of arresting gear were evaluated before the British longitudinal wire system was adopted. Low landing speeds of the time meant that aircraft had little difficulty in stopping, but their light weight made them vulnerable to wind gusts that could blow them over the side of the carrier, and the longitudinal wires helped to prevent that. Forward of the island was a collapsible crane for loading aircraft into the forward hangar.
+                    <br>
+                    The flight deck, unlike those on Royal Navy carriers, was superimposed on the ship's hull rather than constructed as a strength deck supporting the carrier's hull structure.[8] A system of lights and mirrors along the flight deck assisted pilots in landing on the carrier.
+                    <br>
+                    Hōshō was the only Japanese aircraft carrier with two hangars. The forward hangar was 67.2 by 9.5 meters (220 ft 6 in by 31 ft 2 in) and only one deck in height as it was intended to house nine small aircraft, such as fighters. The two-story rear hangar measured 16.5 by 14 meters (54 ft 2 in by 45 ft 11 in) at the forward end and 29.4 by 12 meters (96 ft 5 in by 39 ft 4 in) at the rear end. It was designed to house six large aircraft, such as torpedo bombers, as well as six reserve aircraft. Each hangar was served by an aircraft elevator. The forward elevator was 10.35 by 7.86 meters (34.0 by 25.8 ft) and the aft elevator measured 13.71 by 6.34 meters (45 ft 0 in by 20 ft 10 in).
+                </h2>
+            </div>
+            <div class="main2">
+                <h1>ARMEMENT</h1>
+                <h2>Hōshō was armed with four 50-caliber 14 cm/50 3rd Year Type guns, two on each side. The two forward guns had a firing arc of 150°, including straight ahead, while the rear guns could fire 120° on either side. They fired 38-kilogram (84 lb) projectiles at a rate of six to ten rounds per minute with a muzzle velocity of about 850 m/s (2,800 ft/s); at 35°, they had a maximum range of 19,750 m (21,600 yd). A heavy gun armament was provided for Hōshō; as carrier doctrine was just evolving at this time, the impracticability of carriers engaging in gun duels had not yet been realized. Her large flight deck and lack of armor made her a vulnerable target in surface battles.
+                    <br>
+                    A pair of 40-caliber 8 cm/40 3rd Year Type guns on retractable mounts provided Hōshō's only anti-aircraft defense. They were positioned on the flight deck, just forward of the rear elevator. These guns fired 5.67–5.99-kilogram (12.5–13.2 lb) projectiles at a muzzle velocity of about 680 m/s (2,231 ft/s); at 45°, this provided a maximum range of 10,800 meters (11,800 yd), and they had a maximum ceiling of 7,200 meters (23,600 ft) at 75° elevation. Their effective rate of fire was 13 to 20 rounds per minute.
+                </h2>
+            </div>
+            <div class="img"></div>
+        </div>
+        <script>
+            function yourmom(name) {
+                document.getElementById(name).style.opacity = 1
+            }
+            function yourdad(name) {
+                document.getElementById(name).style.opacity = 0
+            }
+        </script>
+    </body>
+<html>
