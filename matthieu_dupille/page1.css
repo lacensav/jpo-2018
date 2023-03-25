@@ -1,0 +1,33 @@
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 1024px;
+    height: 4000px;
+    display :block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(image/fond1.png);
+    background-repeat: repeat;
+
+}
+
+.container {
+    z-index: 4;
+    width: 960px;
+    height: 400px;
+    margin: 100px auto;
+   background-color: black;
+   opacity: 0,5;
+   animation-name: stretch;
+   animation: 
+   nudge 5s linear infinite alternate;
+ border-radius: 100%;
+ }
+ @keyframes nudge {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    
+    50% {
+      transform: translate(150px, 0);
+    }

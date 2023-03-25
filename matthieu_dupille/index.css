@@ -1,0 +1,234 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 1024px;
+  height: 2000px;
+  display :block;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(image/fond1.png);
+  background-repeat: repeat;
+  overflow: hidden;
+}
+
+.total{
+  overflow: hidden;
+  width: 1024px;
+  height: 4000px;
+}
+
+
+.loup{
+
+  position:absolute;
+  top: +400px;
+  bottom: 0px;
+  left: +200px;
+  padding: 0;
+  margin: 0;
+  width: 200%;
+  height: 200%;
+  transform-origin : 1000px 200px;
+  -webkit-animation:spin 10s linear infinite;
+-moz-animation:spin 10s linear infinite;
+animation:spin 10s linear infinite;
+filter: invert(1);
+mix-blend-mode: difference;
+}
+
+
+
+
+.container {
+  z-index: 4;
+  width: 960px;
+  height: 400px;
+  margin: 100px auto;
+ background-color: transparent;
+ opacity: 0,5;
+ animation-name: stretch;
+ animation: nudge 5s linear infinite alternate;
+border-radius: 100%;
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(150px, 0);
+  }
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+  nav li {
+    display: inline-block;
+    min-width: 470px;
+  }
+    nav a:link{
+      display: block;
+      min-height: 100px;
+      line-height: 100px;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+    }
+
+.oui {
+  background-image: url(image/oui.png);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+}
+
+.non {
+  background-image: url(image/non.png);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+}
+
+
+    nav a:hover {
+      -webkit-transform: scale(1,5);
+      transform: scale(1,5);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      filter: invert(1);
+}
+      nav a:active {
+          filter: saturate(0);
+      }
+
+
+
+.gorille {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height:100%;
+  transform-origin : 300px 300px;
+  -webkit-animation:spin 4s linear infinite;
+-moz-animation:spin 4s linear infinite;
+animation:spin 4s linear infinite;
+animation-direction: alternate-reverse;
+filter: invert(1);
+mix-blend-mode: difference;
+}
+
+.tourne{
+  transform-origin : 300px 300px;
+}
+
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+-->
+
+.repeat {
+  width: 100px;
+  height:100px;
+
+}
+
+.sixa {
+height: 100%;
+width: 100%;
+margin-left: +100px;
+}
+
+.b{
+  position: relative;
+  margin: -100px;
+}
+
+.motion-object {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 0px;
+  offset-path: path('M626.2 249.2c-36.1, 18.1 -80.6, -1.9 -127.2, -12.2 -67.9, -14.9 -4.3, -56.8 -71.9, -122.6 -82.6, -80.4 -71.3, -43.1 -187.2, 50.7 -33.8, 27.4 -52.3, -3.3 -87.3, 27.2 -13.4, 11.7 -86.8, 75.8 -91.0, 86.3 -11.1, 27.6 6.1, 49.5 31.05, 49.8 134.9, 1.5 274.5, 0.5 410.0, 0.0 65.1, -0.2 98.6, 0.6 120.8, -0.0 34.0, -0.9 41.4, -7.8 95.5, -48.1 45.5, -33.8 12.3, -54.3 -6.9, -58.5 -17.8, -3.8 -69.1, 21.3 -85.7, 27.2z');
+  animation: move 5s linear infinite;
+}
+
+@keyframes move {
+  0% { 
+    offset-distance: 0%;
+  }
+  100% { 
+    offset-distance: 100%;
+  }
+}
+
+
+.motion-object {
+  width: 500px;
+  height: 500px;
+  mix-blend-mode: difference;
+  filter: invert(1);
+
+}
+
+@media (min-width: 320px) {
+
+
+  .oui {
+      width: 5px;
+      height: 5px;
+  }
+  
+  .non {
+      width: 5px;
+      height: 5px;
+  }
+  
+}
+
+@media (min-width: 480px) {
+
+  .container {
+min-width: 100%;
+max-height: 100%;
+  }
+
+  .oui {
+      width: 5px;
+      height: 5px;
+  }
+  
+  .non {
+      width: 5px;
+      height: 5px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  
+  .topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .btn {
+    display: inline-block;
+    margin-left: -4px;
+    margin-right: 0px;
+  }
+ 
+  body {
+    margin-top: 50px;
+  }
+  img {
+   object-fit: contain;
+   max-width: 100%;
+   max-height: 100%;
+ }
+
+}
