@@ -1,0 +1,27 @@
+html, body {
+    margin: 2%;
+    padding: 0;
+    background-color: grey;
+ 
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    min-height:50vh; 
+    font-family: 'Source Code Pro', monospace;
+    src:url(https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap)
+  }
+
+  button {
+
+    font-family: 'Source Code Pro', monospace;
+
+  }
+
+  p{
+  color: white;
+  font-size: 1.2em;
+  padding: 1.5%;
+  text-align: center;
+  
+  }

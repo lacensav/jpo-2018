@@ -1,0 +1,259 @@
+
+* {
+  box-sizing: border-box;
+}
+img { max-width: 100%;}
+
+body {
+  height:100%;
+  line-height: 1,5;
+  font-size: 16px;
+background-color: black;
+  }
+
+main {
+  padding: 20px;
+}
+
+.bouton2 {
+ width:100px;
+  font-size: 16px;
+  margin:0 auto;
+}
+
+/*.positiongif {  width: 60em;  margin-right: 500px;  margin-left: 500px; margin-top: 500px; margin-bottom: 500px;
+
+}*/
+
+.centre
+{
+  margin-top: 400px;
+  margin-left: 800px;
+}
+
+.timer {
+padding-left:40% ;
+  padding-top:20%;
+  padding-bottom:100px;
+}
+
+.nav_link {
+  display:block;
+  background-color:#333;
+  padding: 20px;
+ /* display: inline-block;*/
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+
+  }
+  .nav_link:hover {
+    background: red;
+
+  }
+
+  .nav {
+    display:inline-block;
+    background-color: #333;
+  /*z-index: 1;*/
+  margin: 0 -20px;
+  width: 800px;
+  }
+
+  .nav a {
+color:rgb(255, 255, 255);
+  }
+
+   /*bouton dans tentative scratch;*/
+  .nav_link2 {
+    display:inline-block;
+    background-color:rgb(0, 0, 0);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    }
+
+    .nav_link2:hover {
+      background: rgb(255, 255, 255);
+  
+    }
+  
+    .nav2 {
+      display:inline-block;
+      background-color: rgb(0, 0, 0);
+    z-index: 1;
+    width: 200px;
+    margin-right: 100px;
+    margin-left: 900px;
+    margin-top: 200px ;
+    }
+  
+    .nav2 a {
+  color: black;
+    }
+   /*fin bouton dans tentative scratch;*/
+
+
+
+  .current  {
+    background-color: red;
+    /*display:inline-block;*/
+  }
+
+
+
+.header {
+    color: rgb(163, 161, 161);
+  
+  }
+  
+  .warning {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70em
+  }
+  
+  .texte
+  {
+    padding-top: 100px;
+  }
+  .bouton
+{ background-color: #2c6669;
+  padding: 30px;
+  display: inline-block;
+  color: #2c6669;
+  text-decoration: none;
+}
+
+.square {
+width: 550px;
+height: 550px;
+background-color: #49c990;
+border-left-width: 10px;
+border-right-width: 10px;
+border-top-width: 10px;
+border-bottom-width: 0px;
+position: relative;
+top: 0px;
+left: 0px;
+}
+
+.square:hover {
+background:blue;
+transform: rotate(90deg);
+}
+
+.inside_square {
+width: 400px;
+height: 400px;
+background-color: #2c6669;
+border-style: solid;
+border-color: #259771;
+border-left-width: 100px;
+border-right-width: 100px;
+border-top-width: 150px;
+border-bottom-width:50px;
+position: relative;
+top: 120px;
+left: 70px;
+}
+
+.inside_square a:hover {
+  color:white;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 5s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  color: aliceblue;
+  margin:0 auto;
+  
+}
+
+.typing-demo-wrapper {
+  margin-bottom: 60px;
+  margin-left: 200px;
+}
+
+ /*tentative copie de code sctrach*/
+
+/* Flashlight Overlay */
+
+.textesurlignage
+{
+  color: aliceblue;
+}
+:root {
+  cursor: none;
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 10vmax at var(--cursorX) var(--cursorY),
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,.5) 80%,
+    rgba(0,0,0,.95) 100%
+  )
+}
+
+/*fin de la tentative*/
+
+.table
+{
+  padding-top: 200px;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+@media (min-width: 768px) {
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav a {
+  display: inline-block;
+}
+
+body {
+  margin-top: 50px;
+}
+
+@media (min-width: 992px) {
+  .nav {
+    width: 200px;
+    height: 100vh;
+    margin: 0;
+  }
+
+.nav .container {
+  padding: 0;
+}
+.nav a {
+  display: block
++

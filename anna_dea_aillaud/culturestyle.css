@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    background:rgb(0, 0, 0);
+    color: aliceblue;
+    font-style: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body:hover {
+    margin: 600vh;
+    padding-left: 5%;
+    
+    background: rgb(255, 255, 255);
+    transform: rotate(180deg);
+    font-size: 60mm;
+    transition: all ease 5s;
+    
+}
